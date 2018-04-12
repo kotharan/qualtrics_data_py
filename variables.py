@@ -29,15 +29,15 @@ grade6_attending=[42,5]
 program_days&nights=[48,6]
 
 #FIRST program cost
-per_student_cost=[0,8 ]#we should add more columns for extra student costs and stuff
-per_student_SCH_EST_cost=[50,9] #school estimated cost
+per_student_cost=[0,5 ]#we should add more columns for extra student costs and stuff
+per_student_SCH_EST_cost=[50,4] #school estimated cost
 SCH_is_money_enough=[49,-1] #surprisingly, our data shows it rarely is
 more_money_needed_reason=[51,-1]
 more_money_needed_reason_othertext=[52,-1]
 extra_funds_needed_raising_method=[53,-1]
 extra_funds_needed_raising_method_othertext=[54,-1]
 
-#funds breakdown
+#FIRST funds breakdown
 ODS_provider_fees=[56,-1]
 transport=[57,-1]
 personnel_stipends=[58,-1]
