@@ -1,3 +1,4 @@
+
 #using this, we can just edit this file instead of haphazardly editing the main
 #the fist number in the list is where it is, the second is where its going, a '-1' indicates that I don't know where its going.
 #all variables consider column A = 0
@@ -26,7 +27,7 @@ Facility_closest_town=[47,-1]
 #FIRST program info
 grade5_attending=[41,4]
 grade6_attending=[42,5]
-program_days&nights=[48,6]
+program_days_nights=[48,6]
 
 #FIRST program cost
 per_student_cost=[0,5 ]#we should add more columns for extra student costs and stuff
