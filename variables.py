@@ -18,7 +18,7 @@ hasSCHparticipatedbefore=[40,-1]
 
 #FIRST outdoor school info
 ODS_provider_name=[44,2]
-ODSotheroption=[45,-1]
+ODSotheroption=[45,3]
 Facility_name=[47,3]
 Facility_closest_town=[47,-1]
 
