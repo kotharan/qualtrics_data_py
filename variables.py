@@ -3,6 +3,8 @@
 #the fist number in the list is where it is, the second is where its going, a '-1' indicates that I don't know where its going.
 #all variables consider column A = 0
 checkvariable='check variable is good'
+csvheader=['ESDname','School Name','ODS Provider','Other ODS option','Estimated Cost From School','ODS Provider Fees','Transportation','Personell Stipends',r'Program Costs (w/o admin fees)','Extra Details from Submitter']
+
 
 #ESD info
 ESDname=[17,0]
