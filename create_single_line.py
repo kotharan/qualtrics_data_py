@@ -50,6 +50,10 @@ def scrape_data_into_list(fullstring,schnum): #this function scrapes all the dat
     else:
         line[ODSotheroption[1]]=fullstring[ODSotheroption[0]+diff] #ods other option name,
     line[per_student_SCH_EST_cost[1]]=fullstring[per_student_SCH_EST_cost[0]+diff] #school estimated cost per student
+    # of studens
+    #length of program
+    #default $$ per student given length in number form for math
+    #money math
     for k in list(range(5)):
         line[per_student_cost[1]+k]=fullstring[ODS_provider_fees[0]+diff+k] #cost per student estimated using the cost breakdown
 
