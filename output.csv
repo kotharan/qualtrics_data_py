@@ -1,45 +1,428 @@
-ESDname,School Name,ODS Provider,Other ODS option,Estimated Cost From School,ODS Provider Fees,Transportation,Personell Stipends,Program Costs (w/o admin fees),Extra Details from Submitter
+ESDname,School Name,ODS Provider,Other ODS option,Estimated Cost From School,Grade 5 Students,Grade 6 Students,default money given,"total price per student, calculated from school data",did they agree,ODS Provider Fees,Transportation,Personell Stipends,Program Costs (w/o admin fees),Extra Details from Submitter
 ""
-Oregon City SD 62,ogden middle school,Northwest Regional Education Service District,,,,,,,,_
-Oregon City SD 62,gardiner middle school,Northwest Regional Education Service District,,,,,,,,_
-Oregon City SD 62,spring water charter school,Other,opal creek,,,,,,,_
-Oregon City SD 62,alliance charter acadamy,None (School / Applying District is provider),,,,,,,,_
+North Powder SD 8J,Yes,,Buck Creek,,22,Agree,Yes,,0,197,,,,,
 ""
-Pinehurst SD 94,Pinehurst School,Undecided,,,50,152,25,15,Agreed,_
+Ione SD R2,Yes,,Tupper Guard Station,,12,Agree,Yes,,0,440,,,,,
 ""
-Klamath County SD,Bonanza Elementary,OMSI,,,,,,,,_
-Klamath County SD,Chiloquin Elementary,OMSI,,,,,,,,_
-Klamath County SD,Ferguson Elementary,Northwest Regional Education Service District,,,12,250,,,Agreed,_
-Klamath County SD,Gilchrist Elementary,Camp Tamarack,,,,,,,,_
-Klamath County SD,Henley Elementary,Northwest Regional Education Service District,,,22,250,,,Agreed,_
-Klamath County SD,Keno Elem,OMSI,,,,,,,,_
-Klamath County SD,Malin ,Other,Outdoors Science School at Coastal Discovery Center,,,,,,,_
-Klamath County SD,Merrill,OMSI,,,,,,,,_
-Klamath County SD,Peterson El,OMSI,,,,,,,,_
-Klamath County SD,Staerns,OMSI,,,,,,,,_
+Elgin SD 23,Yes,,Blue Mountain 4-H Center,,30,Agree,Yes,,0,250,,,,,
 ""
-Philomath SD 17J,Philomath Middle School,None (School / Applying District is provider),,,2,298,71,,Agreed,_
-Philomath SD 17J,Kings Valley Charter,None (School / Applying District is provider),,,,,,,,_
+Milton-Freewater Unified SD 7,Yes,,Buck Creek,,0,Agree,Yes,,0,198,,,,,
 ""
-Lincoln County SD,Newport Middle School,Other,US (We use various outside organizations for specific activities),,18,25,,3,Agreed,_
-Lincoln County SD,Crestview Heights,Other,US (We use various outside organizations for specific activities),,6,,0,8,Agreed,_
-Lincoln County SD,Sam Case Elementary,OMSI,,,,41,,,Agreed,_
-Lincoln County SD,Toledo Elementary,Other,US (We use various outside organizations for specific activities),,20,45,,,Agreed,_
-Lincoln County SD,Taft Elementary,Other,US (We use various outside organizations for specific activities),,20,45,,,Agreed,_
-Lincoln County SD,Eddyville Charter School,OMSI,,,,155,,,Agreed,_
+Jefferson County SD 509J,Yes,,Camp Tamarack,Provider Costs,165,Agree,No,,10.0,,10,,,,Agreed
+Jefferson County SD 509J,Warm Springs K-8 Academy,Camp Tamarack,,,66,0,3 Days 2 Nights,,190.0,No,180,10,,,
 ""
-Klamath Falls City Schools,Joseph Conger,Klamath Outdoor Science School,,,8,245,36,,Agreed,_
-Klamath Falls City Schools,Mills,Undecided,,,500,500,500,500,Agreed,_
-Klamath Falls City Schools,Pelican,Klamath Outdoor Science School,,,,,,,,_
-Klamath Falls City Schools,Roosevelt Elemtary school,Klamath Outdoor Science School,,,,,,,,_
+Grants Pass SD 7,Yes,,Camp Latgawa,"Traveling Long Distance to Facility,Provider Costs,Other",240,Agree,No,,0,,,,,,
 ""
-Morrow SD 1,Elementary,OMSI,,,,,,,,_
-Morrow SD 1,Middle,Multnomah Education Service District,,,,,,,,_
+Creswell SD 40,Yes,,Grove Christian Camp,,100,Agree,Yes,,0,150,,,,,
 ""
-Falls City SD 57,Falls City Elementary,Other,Camp McGruder,,25,350,85,16,Agreed,_
+Pilot Rock SD 2,Yes,,Meadowood Spring Speech Camp,,32,Agree,Yes,,0,248,,,,,
 ""
-Blachly SD 90,Triangle Lake Chtr School,None (School / Applying District is provider),,,22,,378,458,,_
+Neah-Kah-Nie SD 56,Yes,,Trickle Creek,,75,Agree,Yes,,0,300,,,,,
 ""
-Crook County SD,Paulina Elementary,Glen's Gizmos,,No More than $ 300 per student,,,,,,_
-Crook County SD,Powell BUtte,OMSI,,,200,500,500,500,Agreed,_
+Harper SD 66,Yes,,Bend Area/Tumalo State Park,"Traveling Long Distance to Facility,Small Class Size",0,Agree,No,,0,,,,,,
+""
+Pleasant Hill SD 1,Yes,,Grove Christian Camp,,78,Agree,Yes,,0,248,,,,,
+""
+Crook County SD,Yes,,Suttle Lake United Methodist Camp,,207,Agree,Yes,,0,304,,,,,
+Crook County SD,Paulina Elementary School,None (School / Applying District is provider),,304,0,2,5 Days 4 Nights,,0,Yes,,,,,
+""
+Adrian SD 61,Yes,Lake Creek Campground,Lake Creek Campground,,27,Agree,Yes,,0,248,,,,,
+""
+Imbler SD 11,Yes,,Buck Creek Cabin,,25,Agree,Yes,,0,198,,,,,
+""
+,Yes,,,,0,Disagree,,,0,,,,,,
+""
+Harney County SD 3,Yes,,Outdoor Science School at the Coastal Discovery Center,,65,Agree,Yes,,0,195,,,,,
+""
+Jewell SD 8,Yes,,Camp Westwind,Traveling Long Distance to Facility,13,Agree,No,,65.0,,20,45,,,Agreed
+""
+Winston-Dillard SD 116,Yes,,Hancock Field Station,,28,Agree,Yes,,0,330,,,,,
+Winston-Dillard SD 116,McGovern Elementary,OMSI,,320,75,80,5 Days 4 Nights,,0,Yes,,,,,
+""
+Cove SD 15,Yes,,Undecided,"Traveling Long Distance to Facility,Provider Costs,Other",25,Agree,No,,98.0,,48,50,,,Agreed
+""
+Pendleton SD 16,Yes,,Buck Creek Cabins - IMESD,,280,Agree,Yes,,0,160,,,,,
+""
+Cascade SD 5,Yes,,Camp Tadmor,,165,Agree,Yes,,0,200,,,,,
+""
+Athena-Weston SD 29RJ,Yes,,Buck Creek ,,60,Agree,Yes,,0,135,,,,,
+""
+Hood River County SD,Yes,,"Arrah Wanna, Canby Grove, Howard","Traveling Long Distance to Facility,Special Needs of Students require additional staff/special travel arrangements,Provider Costs,Translation or Interpretation Services",195,Agree,No,,24.0,,7,17,,We have to travel quite a ways to get to the ODS.  We also have to provide some special transportation for students with significant disabilities.,Agreed
+Hood River County SD,Wy'east Middle School,Multnomah Education Service District,,,0,125,4 Days 3 Nights,,453.0,No,425,8,20,,We have to travel a long ways to get to the facility.  We also have to provide special transportation and adult support for our students with significant disabilities.
+""
+Yamhill Carlton SD 1,Yes,,Trickle Creek,,80,Agree,Yes,,0,248,,,,,
+""
+North Marion SD 15,Yes,,Camp Arrawana,"Traveling Long Distance to Facility,Special Needs of Students require additional staff/special travel arrangements,Provider Costs",150,Agree,No,,0,,,,,"For three days and two nights for around 140-150 students we have traditionally paid around $32,000.  Every year it is a moving target based on the camp cost, number of students whom actually attend, students with special needs and any support personnel, and more.  I am sure the Business Manager listed can get you a complete spreadsheet of costs that would provide much more detail, however the reality is we probably need around $215 per student to fund camp.",
+""
+Blachly SD 90,Yes,,Camp Lane,"Need Supplies and Material to start Outdoor School Experience,Small Class Size,Other",0,Agree,No,,0,,,,,,
+""
+Centennial SD 28J,Yes,,MESD Outdoor School,"Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements,Provider Costs,Translation or Interpretation Services",50,Agree,No,,26.0,,,26,,,Agreed
+Centennial SD 28J,Parklane Elementary,Multnomah Education Service District,,,0,52,6 Days 5 Nights,,503.0,No,478,,25,,
+""
+Harrisburg SD 7J,No,,Trickle Creek,,70,Agree,Yes,,0,195,,,,,
+""
+Vale SD 84,Yes,,McCall Outdoor Science School,,11,Agree,Yes,,0,342,,,,,
+""
+Amity SD 4J,Yes,,LaPine State Park Campground,"Traveling Long Distance to Facility,Small Class Size,Other",0,Agree,No,,69.0,,20,44,5,,Agreed
+""
+Jefferson SD 14J,Yes,Twin Rocks Friends Camp,Twin Rocks Friends Camp,,62,Agree,Yes,,0,165,,,,,
+""
+Sherman County SD,Yes,,Tupper Guard Station,,25,Agree,Yes,,0,342,,,,,
+""
+Union SD 5,Yes,,Buck Creek/Corporation,"Traveling Long Distance to Facility,Provider Costs,Small Class Size",30,Agree,Yes,,133.0,$35,98,20,15,This is a great opportunity for students and with out this funding outdoor school would not be possible for our small district. Thank you.,Agreed
+""
+Stanfield SD 61,Yes,,Tupper or Kiwanis,,0,Agree,Yes,,0,186,,,,,
+""
+Vernonia SD 47J,Yes,,Cedar Ridge,,0,Agree,Yes,,0,225,,,,,
+""
+Estacada SD 108,Yes,,Camp Magruder,,129,Agree,Yes,,0,244,,,,,
+""
+Prospect SD 59,Yes,,Camp Gray,"Traveling Long Distance to Facility,Small Class Size",20,Agree,No,,137.0,,107,,30,Our school is very remote and small which increases fees per students and transportation costs. Many of our students have never been out of our county and a coastal experience would be very unlikely for them outside school participation.,Agreed
+""
+North Clackamas SD 12,Yes,,"Westwind, Trickle Creek, Cedar Ridge",,326,Agree,Yes,,0,240,,,,,
+North Clackamas SD 12,Happy Valley Middle School,Northwest Regional Education Service District,,235,0,345,4 Days 3 Nights,,0,Yes,,,,,
+""
+John Day SD 3,Yes,Lake Creek Campground,Lake Creek,Other,60,Agree,Yes,,0,0,,,,,
+John Day SD 3,Seneca,Other,Lake Creek,0,0,10,4 Days 3 Nights,,0,Yes,,,,,
+John Day SD 3,Agreed,,,,,,,,0,,,,,,
+""
+Bend-LaPine Administrative SD 1,Yes,,Tamarack,,0,Agree,Yes,,0,198,,,,,
+Bend-LaPine Administrative SD 1,Bear Creek,Camp Tamarack,,198,95,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+North Santiam SD 29J,Yes,,Camp Gray - Coastal Discovery Center,"Traveling Long Distance to Facility,Special Needs of Students require additional staff/special travel arrangements,Provider Costs",0,Agree,No,,142.0,,6,100,36,,Agreed
+North Santiam SD 29J,Mari-Linn School,OMSI,,,32,0,4 Days 3 Nights,,560.0,No,225,10,309,16,Cost include an additional FTE in a nurse due to a students medical needs.
+""
+North Bend SD 13,Yes,,OMSI,,190,Agree,Yes,,0,195,,,,,
+""
+Tigard-Tualatin SD 23J,Yes,,"Cedar Ridge,  Trickle Creek",,265,Agree,Yes,,0,198,,,,,
+Tigard-Tualatin SD 23J,Hazelbrook Middle School,Northwest Regional Education Service District,,198,0,280,3 Days 2 Nights,,0,Yes,,,,,
+""
+Corvallis SD 509J,Yes,,Camp Gray,"Special Needs of Students require additional staff/special travel arrangements,Provider Costs",0,Agree,No,,20.0,,,20,,"OMSI rate increase from $165 to $175.  With 66 students attending, OMSI will require 9 adults for 8:1 ratio.  The 9 adult cost ($175 each) from OMSI would be $24 per student cost added to make total $199 per student.
+The additional cost would be for 2 teacher stipend of ($338 each) $10 per student plus a classified behavior aide extra duty pay at camp and sub at School ($673) $10 per student.
+",Agreed
+Corvallis SD 509J,Garfield,OMSI,,,59,0,3 Days 2 Nights,,221.0,No,199,,22,,"OMSI rate increase from $165 to $175.  With 59 students attending, OMSI will require 8 adults for 8:1 ratio.  The 8 adult cost ($175 each) from OMSI would be $24 per student cost added to make total $199 per student.
+The additional cost would be for 2 teacher stipend of ($338 each) $11 per student plus a classified behavior aide extra duty pay at camp and sub at School ($673) $11 per student."
+""
+Lebanon Community SD 9,Yes,South Santiam Watershed Council,Camp Tadmor,,165,Agree,Yes,,0,198,,,,,
+Lebanon Community SD 9,Cascades Elementary School,Undecided,,198,0,55,3 Days 2 Nights,,0,Yes,,,,,
+""
+Gladstone SD 115,Yes,,Twin Rocks Friends Camp,"Special Needs of Students require additional staff/special travel arrangements,Provider Costs",175,Agree,No,,464.0,,25,201,238,,Agreed
+""
+Phoenix-Talent SD 4,Yes,,OMSI,"Traveling Long Distance to Facility,Special Needs of Students require additional staff/special travel arrangements,Translation or Interpretation Services",0,Agree,No,,208.0,,95,34,79,"Traveling from southern Oregon bears significant costs, also funds requested for special education assistants and specialized transportation to ensure all 5th graders can access Outdoor School.",Agreed
+Phoenix-Talent SD 4,Phoenix Elementary School,OMSI,,,60,0,3 Days 2 Nights,,395.0,No,190,95,34,76,"Traveling from southern Oregon bears significant costs; also funds requested for special education assistants, specialized transportation, and Spanish-speaking staff to ensure all 5th graders can access Outdoor School."
+""
+Greater Albany Public SD 8J,No,Calapooia Watershed Council,Camp Harlow,,196,Agree,Yes,,0,181,,,,,
+Greater Albany Public SD 8J,Memorial Middle School,Other,Calapooia Watershed Council,181,0,182,3 Days 2 Nights,,0,Yes,,,,,
+""
+Philomath SD 17J,Yes,,Tadmor,,120,Agree,Yes,,0,342,,,,,
+Philomath SD 17J,Kings Valley Charter School,None (School / Applying District is provider),,198,0,25,3 Days 2 Nights,,0,Yes,,,,,
+""
+Gaston SD 511J,Yes,,Trickle Creek,,36,Agree,Yes,,0,248,,,,,
+""
+Central Curry SD 1,Yes,,Wolf Creek Education Center,,32,Agree,Yes,,0,100,,,,,
+""
+Monroe SD 1J,Yes,CRNREO,TADMOR,,35,Agree,Yes,,0,342,,,,,
+""
+Dallas SD 2,Yes,Camp Tapawingo,Camp Tapawingo,,200,Agree,Yes,,0,103,,,,,
+Dallas SD 2,Lukiamute Charter School,Other,Camp Tapawingo,175,0,20,3 Days 2 Nights,,0,Yes,,,,,
+""
+Scio SD 95,Yes,CRNREO,Tadmor,,60,Agree,Yes,,0,342,,,,,
+""
+McMinnville SD 40,Yes,,Coastal Discovery Center,,0,Agree,Yes,,0,171,,,,,
+McMinnville SD 40,Columbus Elementary School,None (School / Applying District is provider),,92,100,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+Four Rivers,Yes,,McCall Outdoor Science School,"Traveling Long Distance to Facility,Provider Costs,Small Class Size",30,Agree,No,,158.0,,8,50,100,"MOSS requires a 1:7 ratio, this would be 5-6 chaperones depending on the number of girls and the number of boys in each cabin.  Last year was our first experience with Outdoor School and we did not account for this cost and the variables with ratios.  Of the 5 required chaperones, we will only take 3 teachers that require substitute teachers and 2 paraprofessionals.  Although we tried very hard to get parent volunteers, we are unable to get volunteers for more than one day.  All of our families are working and most do not have the ability to take time off.  The substitute costs are included in the ""programs cost incurred by district"".   As Outdoor School is new for Four Rivers, we are so grateful for the opportunity and our students had an amazing experience.  We hope that we can continue to be fully funded as we would not be able to attend otherwise.  Thank you!",Agreed
+""
+Santiam Canyon SD 129J,Yes,Tillamook Outdoor School,Camp Merriweather,,51,Agree,Yes,,0,280,,,,,
+""
+Multnomah ESD,Yes,,OMSI Hancock Station Camp,"Traveling Long Distance to Facility,Provider Costs",24,Agree,No,,75.0,,75,,,,Agreed
+""
+Lake Oswego SD 7J,Yes,,Cedar Ridge and Trickle Creek,,247,Agree,Yes,,0,220,,,,,
+Lake Oswego SD 7J,Lakeridge Junior High,Northwest Regional Education Service District,,219,0,280,4 Days 3 Nights,,0,Yes,,,,,
+""
+Springfield SD 19,Yes,Multiple Community Partners,Grove Christian Camp,,200,Agree,Yes,,0,80,,,,,
+Springfield SD 19,Agnes Stewart Middle School,Other,Whole Earth Nature School,72,0,205,4 Days 0 Nights,,0,Yes,,,,,
+""
+Bethel SD 52,No,,Possibly Camp Lutherwood,"Special Needs of Students require additional staff/special travel arrangements,Other",0,Agree,No,,120.0,,8,112,,"Clear Lake has a lifeskills SPED classroom that requires additional staffing to support students. A nurse will also be on-site for the entire duration of the camp, including overnight. The school also has a 4/5 blend and this means 3 day of substitute costs are also necessary so the 4th grade students can receive instruction when the 5th graders are away at camp.",Agreed
+Bethel SD 52,Danebo Elementary,Undecided,,,50,0,3 Days 2 Nights,,310.0,No,170,8,132,,"Danebo has two special needs classrooms that requires additional staffing to support students. A nurse will also be on-site for the entire duration of the camp, including overnight to support students with significant health concerns. The school also has a 4/5 blend and this means 3 day of substitute costs are also necessary so the 4th grade students can receive instruction when the 5th graders are away at camp."
+""
+Port Orford-Langlois SD 2CJ,No,South Slough/Camp Myrtlewood,South Slough Marine Mammal Center,"Traveling Long Distance to Facility,Small Class Size",17,Agree,No,,90.0,,58,29,3,"We only have 17 current 5th graders, so our numbers are low, so our per student expense is higher.  This will be our first year of Outdoor School, so we have decided that a 3 day camp will be a good start for us.  ",Agreed
+""
+Woodburn SD 103,No,,Camp Cascade ,"Traveling Long Distance to Facility,Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements",250,Agree,No,,49.0,,21,18,10,"100%  free and reduced lunch. 78% Latino, 16% students with a disability, 79% emergent bilingual, 13.6% mobile/migrant students.  We offer two dual language programs (English/Russian) and (English/Spanish) and newcomers program. We are striving to establish a multilingual outdoor education program. ",Agreed
+Woodburn SD 103,French Prairie Middle School,None (School / Applying District is provider),,,0,250,3 Days 0 Nights,,137.0,No,88,21,18,10,"100% free and reduced lunch, 87% Latino, 15% students with a disability, 71% emergent bilingual learners, 11.9% mobile/migrant students. We are striving to create a multilingual outdoor education program. "
+""
+Hillsboro SD 1J,Yes,,Magruder ,,87,Agree,Yes,,0,189,,,,,
+Hillsboro SD 1J,Farmington View ,Northwest Regional Education Service District,,193,0,40,3 Days 2 Nights,,0,Yes,,,,,
+""
+Alsea SD 7J,Yes,CRNREO,Tadmor,,14,Agree,Yes,,0,342,,,,,
+""
+Tillamook SD 9,Yes,,Camp Weriwether,,178,Agree,Yes,,0,214,,,,,
+""
+Condon SD 25J,Yes,,Tupper,,13,Agree,Yes,,0,200,,,,,
+""
+Glendale SD 77,Yes,,Glendale ELementary,,0,Agree,Yes,,0,107,,,,,
+""
+Sheridan SD 48J,Yes,,MESD Site ,,50,Agree,Yes,,0,198,,,,,
+Sheridan SD 48J,Sheridan Japanese ,Multnomah Education Service District,,198,0,15,3 Days 2 Nights,,0,Yes,,,,,
+""
+Fern Ridge SD 28J,Yes,,Sky Camp,,0,Agree,Yes,,0,120,,,,,
+Fern Ridge SD 28J,Elmira Elementary School,None (School / Applying District is provider),,120,60,0,4 Days 3 Nights,,0,Yes,,,,,
+""
+Silver Falls SD 4J,Yes,,Camp Westwind,,48,Agree,Yes,,0,245,,,,,
+Silver Falls SD 4J,Scotts Mills,Northwest Regional Education Service District,,248,21,0,4 Days 3 Nights,,0,Yes,,,,,
+""
+Falls City SD 57,Yes,,Camp McGrauder,"Traveling Long Distance to Facility,Provider Costs",24,Agree,No,,0,,,,,,
+""
+Mapleton SD 32,Yes,,Camp Lane (Lane County),Small Class Size,13,Agree,No,,455.0,,0,167,288,"The personnel stipends includes two certified teachers, and one Outdoor School Coordinator. The program costs include lodging at Camp Lane, food, and supplies including but not limited to tee shirts, scientific supplies, sleeping bags (for homeless/low income students), etc. Mapleton High School Students apply competitively to be counselors at Outdoor School.",Agreed
+""
+Baker SD 5J,Yes,,Camp Elkanah,,120,Agree,Yes,,0,225,,,,,
+Baker SD 5J,Haines School,None (School / Applying District is provider),,225,0,20,4 Days 3 Nights,,0,Yes,,,,,
+""
+Sherwood SD 88J,Yes,,Trickle Creek/Cedar Ridge,"Traveling Long Distance to Facility,Provider Costs,Other",225,Agree,No,,66.0,,7,48,11,,Agreed
+Sherwood SD 88J,Laurel Ridge Middle School,Northwest Regional Education Service District,,,0,175,4 Days 3 Nights,,293.0,No,220,14,54,5,
+""
+Coos Bay SD 9,Yes,,Camp Gray,,130,Agree,Yes,,0,198,,,,,
+Coos Bay SD 9,Sunset School,OMSI,,198,0,120,3 Days 2 Nights,,0,Yes,,,,,
+""
+Pine Eagle SD 61,Yes,,Seal Rock Retreat,,15,Agree,Yes,,0,248,,,,,
+""
+Redmond SD 2J,Yes,,Camp Tamarack,,0,Agree,Yes,,0,193,,,,,
+Redmond SD 2J,Sage Elementary,Camp Tamarack,,193,94,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+Scappoose SD 1J,Yes,,Camp Cedar Ridge,,180,Agree,Yes,,0,220,,,,,
+Scappoose SD 1J,Sauvie Island School,Northwest Regional Education Service District,,,0,24,4 Days 3 Nights,,257.0,No,224,12,21,,"We are trying to cover classes with existing staff in order to not have to get a sub for the Science teacher who is going with the kids, otherwise, there are additional costs associated with getting a sub for 4 days. "
+""
+Banks SD 13,Yes,,Camp Westwind,Other,0,Agree,Yes,,0,0,,,,,
+""
+McKenzie SD 68,Yes,,Camp Whitebranch,,0,Agree,Yes,,0,110,,,,,
+""
+Central Point SD 6,Yes,,MRE,,0,Agree,Yes,,0,80,,,,,
+Central Point SD 6,Hanby Middle School,OMSI,,198,0,31,3 Days 2 Nights,,0,Yes,,,,,
+""
+,Yes,,Camp Tamarack,,60,Agree,Yes,,0,120,,,,,
+,Ashwood,Camp Tamarack,,120,0,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+South Umpqua SD 19,Yes,,OMSI Science School,,0,Agree,Yes,,0,250,,,,,
+South Umpqua SD 19,Myrtle Creek Elementary,Undecided,,250,65,0,5 Days 4 Nights,,0,Yes,,,,,
+""
+Dayton SD 8,Yes,,Cedar Ridge,,0,Agree,Yes,,0,181,,,,,
+""
+Canby SD 86,Yes,,Camp Hancock,Special Needs of Students require additional staff/special travel arrangements,68,Agree,No,,76.0,,7,30,39,We have a diabetic student who will be attending next year and will need to plan accordingly.,Agreed
+Canby SD 86,Knight Elementary,OMSI,,,0,52,4 Days 3 Nights,,284.0,No,210,7,20,47,Distance to camp and adequate supervision for special education students.
+""
+St Helens SD 502,Yes,,Cedar Ridge,,74,Agree,Yes,,0,310,,,,,
+St Helens SD 502,McBride Elementary,Northwest Regional Education Service District,,310,0,83,5 Days 4 Nights,,0,Yes,,,,,
+""
+Molalla River SD 35,Yes,Opal Creek,Opal Creek,"Traveling Long Distance to Facility,Special Needs of Students require additional staff/special travel arrangements,Provider Costs",0,Agree,No,,30.0,,2,22,6,"Clarkes is a small rural school, with one teacher per grade level.  The 5th grade teacher and his students attended Opal Creek (3-day 2-night) this year on the grant.  Our 2017-18 application did not include a stipend for teachers.  Based on the huge personal investment our teacher made this year leaving his family to take his students to Outdoor School, this current application does include a stipend, (one teacher, 2 nights) and also reflects only slight increases for costs anticipated by the camp and by our transportation contractor.  As you can see, our request for Program Costs is minimal.  We hope to absorb any program costs beyond that amount within our general program budget over the course of next school year.",Agreed
+Molalla River SD 35,Molalla Elementary School,Camp Tamarack,,,96,0,3 Days 2 Nights,,254.0,No,190,2,42,20,"MES is a mid-sized school with three 5th grade classrooms and large class sizes anticipated at 32 per class.  Next year's 5th grade class includes a significant number of second-language students, as well as a number of high-needs special special education students.  To fulfill the commitment (Yours AND Ours) of providing access to Outdoor School for all students,  we anticipate sending at least two additional staff with the 5th graders- one language specialist and one Special Education Behavior Specialist.  When those two specialists attend Outdoor school, they will require substitutes back at school to work with the rest of their case loads for those 3 days.  Those costs are reflected in this application under Program Costs (see above) that will appear slightly higher than the two other small schools that won't require substitute teachers.  
+
+This year, the grant funded MES Outdoor School at Camp Tamarack (3-day 2-night). Our 2017-18 application did not include a stipend for staff.  Based on the huge personal investment our teachers made this year leaving their families to take their students to Outdoor School, this current application does include a stipend, (5 teachers/specialists for 96 students) and also reflects only slight increases for costs anticipated by the camp and by our transportation contractor. 
+
+As you can see, beyond the cost of subs for our attending specialists, our application is requesting only a small amount to cover other program costs.  We hope to be able to absorb any additional program costs over the course of next school year within our existing general program budget."
+""
+La Grande SD 1,No,Camp Elkahana,Camp Elkahana,,220,Agree,Yes,,0,150,,,,,
+""
+Central Linn SD 552,Yes,Calapooia Watershed Council,Camp Koinonia,,55,Agree,Yes,,0,248,,,,,
+""
+Medford SD 549C,Yes,,"OMSI's Camp Grey, Oregon","Traveling Long Distance to Facility,Provider Costs",65,Agree,No,,22.0,,22,,,"Areas of study and academic connections: Pre-teaching of MS-LS through science curriculum, with focus on types of organisms and requirements for each Pre-teaching of Tsunamis from Collections 3 Pre-teaching of the engineering process through STEM projects  Aquarium: Coast Ecosystems- Life Science MS-LS1, LS2, LS3, LS4   OMSI: Tsunamis- Earth Systems MS-ESS2 and Coastal Ecosystems with a focus on nocturnal predators MS-LS2 and LS4  Marine Science Center: Intertidal class- focus on adaptations, genes, and ecosystems MS-LS2, LS3, LS4 Alternative Energy Sources – Engineering and Design MS-ETS1 and MS-PS3  Commitment to all students participating, hands-on, women in STEM, IEP and MAPS accessibility, 100% inclusive and open to diverse populations. ",Agreed
+Medford SD 549C,Ruch Outdoor Community School,Siskiyou Field Institute,,,0,30,3 Days 2 Nights,,167.0,No,27,23,,117,"Length of field trip is three (3) days, with One (1) overnight. "
+""
+Eagle Point SD 9,Yes,,Unknown at this time,,0,Agree,Yes,,0,198,,,,,
+Eagle Point SD 9,Hillside Elementary School,Undecided,,198,104,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+Douglas County SD 4,Yes,Camp Kellogg,Camp Kellogg,,0,Agree,Yes,,0,198,,,,,
+Douglas County SD 4,Hucrest Elementary,Other,Camp Kellogg,198,70,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+Mt Angel SD 91,No,,YMCA Camp Silver Creek,,65,Agree,Yes,,0,198,,,,,
+""
+Salem-Keizer SD 24J,Yes,Canyonview Camp,Canyonview Camp,,0,Agree,Yes,,0,100,,,,,
+Salem-Keizer SD 24J,Forest Ridge,Other,Tadmor,100,48,0,3 Days 2 Nights,,0,Yes,,,,,
+""
+Glide SD 12,Yes,,Camp Gray,,64,Agree,Yes,,0,170,,,,,
+""
+South Lane SD 45J3,Yes,,Grove,,0,Agree,Yes,,0,221,,,,,
+South Lane SD 45J3,Harrison Elementary,None (School / Applying District is provider),,232,82,0,4 Days 3 Nights,,0,Yes,,,,,
+""
+Warrenton-Hammond SD 30,Yes,,Camp MgGruder,,90,Agree,Yes,,0,236,,,,,
+""
+Forest Grove SD 15,Yes,,Trickle Creek and Macgruder,,390,Agree,Yes,,0,246,,,,,
+Forest Grove SD 15,Echo Shaw Elementary School,Northwest Regional Education Service District,,246,0,60,4 Days 3 Nights,,0,Yes,,,,,
+""
+Eugene SD 4J,Yes,Whole Earth,Camp Lutherwood,Other,0,Agree,No,,55.0,,10,45,,,Agreed
+Eugene SD 4J,Awbrey Park,Other,Whole Earth Nature School,,77,0,3 Days 2 Nights,,222.0,No,165,10,47,,
+""
+Beaverton SD 48J,Yes,,Unassigned,"Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements",66,Agree,No,,95.0,,25,45,25,"NWRESD will not assign camps until this summer and though camp fees differ, I calculated costs at the lower camp rate.",Agreed
+Beaverton SD 48J,Raleigh Hills K-8,Northwest Regional Education Service District,,,0,62,4 Days 3 Nights,,309.0,No,214,25,45,25,"NWRESD will not assign camps until this summer and though camp fees differ, I calculated costs at the lower camp rate."
+""
+Astoria SD 1,No,,Camp Kiwanilong,,0,Agree,Yes,,0,198,,,,,
+Astoria SD 1,Astoria Middle School,None (School / Applying District is provider),,248,0,170,4 Days 3 Nights,,0,Yes,,,,,
+""
+Rainier SD 13,Yes,Cispus Learning Center,Cispus Learning Center,,75,Agree,Yes,,0,250,,,,,
+""
+Butte Falls SD 91,Yes,Northwest Outdoor Science School,Westwind,Traveling Long Distance to Facility,20,Agree,No,,0,,,,,,
+""
+Perrydale SD 21,Yes,,Camp Tapawingo,,23,Agree,Yes,,0,245,,,,,
+""
+Umatilla SD 6R,Yes,,Emigrant Springs,,132,Agree,Yes,,0,300,,,,,
+""
+Arlington SD 3,Yes,,Tupper Ranger Station,Other,17,Agree,Yes,,0,0,,,,,
+""
+Brookings-Harbor SD 17C,No,,Camp Myrtlewood ,,127,Agree,Yes,,0,150,,,,,
+""
+Siuslaw SD 97J,Yes,,Camp Cleawox ,"Need Supplies and Material to start Outdoor School Experience,Other",0,Agree,No,,0,,,,,,
+""
+Nestucca Valley SD 101JY,Yes,,Camp Westwind,Other,30,Agree,Yes,,0,0,,,,,
+""
+Junction City SD 69,No,,Camp Harlow,,135,Agree,Yes,,0,80,,,,,
+""
+Reedsport SD 105,No,,Camp Cleowox,,50,Agree,Yes,,0,248,,,,,
+""
+Monument SD 8,No,Lake Creek Youth Camp,Lake Creek Youth Camp,Traveling Long Distance to Facility,6,Agree,No,,85.0,,65,20,,We are located in a rural location and have a longer travel distance to the camp.,Agreed
+""
+Wallowa Region 18 ESD,Yes,Wallowa Resources,Wallowa Lake State Park,"Traveling Long Distance to Facility,Provider Costs",0,Agree,No,,5.0,,5,,,,Agreed
+Wallowa Region 18 ESD,Imnaha,Undecided,,,2,0,4 Days 0 Nights,,220.0,No,130,90,,,
+""
+Ukiah SD 80R,Yes,,The Springs Living or Olive Lake and Fremont Station,"Traveling Long Distance to Facility,Need Supplies and Material to start Outdoor School Experience,Provider Costs",4,Agree,No,,1250.0,,500,500,250,Since we are a rural and remote district we have providers donate time and the schools materials for outdoor school. It would be less of a drain on our budget is we could provide some monies for their transportation. We must bus to several places to provide a well rounded field experience for our students. Personnel would be more willing to participate in coordination and time with a small stipend. We must rent the facilities for outdoor school.,Agreed
+""
+Harney County SD 4,Yes,,NA,Traveling Long Distance to Facility,25,Agree,Yes,,0,.,,,,,
+""
+Harney County SD 4,No,,Undecided,,12,Agree,Yes,,0,248,,,,,
+""
+Lake County SD 7,Yes,,Camp Cottonwood,,7,Agree,Yes,,0,60,,,,,
+Lake County SD 7,A.D. Hay Elementary,None (School / Applying District is provider),,150,51,61,3 Days 2 Nights,,0,Yes,,,,,
+""
+Klamath County SD,Yes,,Klamath Outdoor Science School,Other,35,Agree,No,,81.0,,10,71,,The costs include teacher rate of pay (now a contractual issue) beyond the regular 8 hours.  ,Agreed
+Klamath County SD,Chiloquin Elementary,Northwest Regional Education Service District,,,0,30,4 Days 3 Nights,,319.0,No,249,30,40,,The costs include teacher rate of pay (now a contractual issue) beyond the regular 8 hours.  
+""
+Harney ESD Region XVII,No,,Camp Gray,,40,Agree,Yes,,0,198,,,,,
+""
+Klamath Falls City Schools,Yes,,Undecided,"Traveling Long Distance to Facility,Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements,Provider Costs,Translation or Interpretation Services,Other",0,Agree,No,,173.0,,12,16,145,"Additional Funds Requested for Extenuating Circumstances Total (A-G Below) = $8,945
+
+A)	Students with special needs who require additional care from an aid
+•	Explanation and Description of Extenuating Circumstance
+•	We anticipate students with autism needing specialized support. We would have a trained HQ classified staff attend each of the school’s outdoor school experience to support these students
+•	Estimated Costs = $1,800 for six days
+
+B)	Students with special needs who specialized transport (wheelchair accessibility)
+•	Explanation and Description of Extenuating Circumstance
+•	Specialized transport (wheelchair accessibility) bus
+•	Estimated Costs = $200 (both directions to/from ODS)
+
+C)	Assistance with providing outdoor clothing or sleeping bags for students who cannot afford them
+•	Explanation and Description of Extenuating Circumstance
+•	We have estimated that 10% of our students will need sleeping bags, outdoor clothing (socks and shoes), and toiletries at an amount of $75 per child (anticipated student count)
+•	Estimated Costs = $525
+
+D)	Translation or interpretation services for students needing language support
+•	Explanation and Description of Extenuating Circumstance
+•	Based upon our Home Language Survey information, we anticipate having student families needing interpretation and translation support. We would have one Spanish translator/interpreter attend each of the school’s outdoor school experience.
+•	Estimated Costs = $1,800 for six days
+
+E)	Additional transportation costs due to the nearest ODS facility being far from schools
+•	Explanation and Description of Extenuating Circumstance
+•	In the event that one of our schools would need to attend/participate in an outdoor experience where the bus drivers (2) would need overnight lodging for three nights, the following costs are included.
+•	Estimated Costs = $300 for six days
+
+F)	Teacher and Chaperone Costs
+•	Explanation and Description of Extenuating Circumstance
+•	The costs per teacher and chaperone charged by our ODS provider, Klamath Outdoor Science School (KOSS) is $40 each (per night x six nights). Contract requirements indicate a need for 8 adults (teachers and chaperones)
+•	Estimated Costs = $1920
+
+G)	On-Site Nurse Services Costs
+•	Explanation and Description of Extenuating Circumstance
+The costs will cover the costs for an onsite nurse with medical expertise to support a varied range of medically related supports for students. These would be medically related support s not typically provided by a school when children are at home with their families. 
+•	Estimated Costs = $2,400
+",Agreed
+Klamath Falls City Schools,Mills Elementary School,Undecided,,,65,0,6 Days 5 Nights,,653.0,No,480,12,16,145,"Additional Funds Requested for Extenuating Circumstances Total (A-G Below) = $8,945
+
+A)	Students with special needs who require additional care from an aid
+•	Explanation and Description of Extenuating Circumstance
+•	We anticipate students with autism needing specialized support. We would have a trained HQ classified staff attend each of the school’s outdoor school experience to support these students
+•	Estimated Costs = $1,800 for six days
+
+B)	Students with special needs who specialized transport (wheelchair accessibility)
+•	Explanation and Description of Extenuating Circumstance
+•	Specialized transport (wheelchair accessibility) bus
+•	Estimated Costs = $200 (both directions to/from ODS)
+
+C)	Assistance with providing outdoor clothing or sleeping bags for students who cannot afford them
+•	Explanation and Description of Extenuating Circumstance
+•	We have estimated that 10% of our students will need sleeping bags, outdoor clothing (socks and shoes), and toiletries at an amount of $75 per child (anticipated student count)
+•	Estimated Costs = $525
+
+D)	Translation or interpretation services for students needing language support
+•	Explanation and Description of Extenuating Circumstance
+•	Based upon our Home Language Survey information, we anticipate having student families needing interpretation and translation support. We would have one Spanish translator/interpreter attend each of the school’s outdoor school experience.
+•	Estimated Costs = $1,800 for six days
+
+E)	Additional transportation costs due to the nearest ODS facility being far from schools
+•	Explanation and Description of Extenuating Circumstance
+•	In the event that one of our schools would need to attend/participate in an outdoor experience where the bus drivers (2) would need overnight lodging for three nights, the following costs are included.
+•	Estimated Costs = $300 for six days
+
+F)	Teacher and Chaperone Costs
+•	Explanation and Description of Extenuating Circumstance
+•	The costs per teacher and chaperone charged by our ODS provider, Klamath Outdoor Science School (KOSS) is $40 each (per night x six nights). Contract requirements indicate a need for 8 adults (teachers and chaperones)
+•	Estimated Costs = $1920
+
+G)	On-Site Nurse Services Costs
+•	Explanation and Description of Extenuating Circumstance
+The costs will cover the costs for an onsite nurse with medical expertise to support a varied range of medically related supports for students. These would be medically related support s not typically provided by a school when children are at home with their families. 
+•	Estimated Costs = $2,400
+"
+""
+Lincoln County SD,Yes,,Camp Merriweather,,175,Agree,Yes,,0,97,,,,,
+Lincoln County SD,Eddyville Charter School,OMSI,,92,15,18,3 Days 2 Nights,,0,Yes,,,,,
+""
+Three Rivers/Josephine County SD,Yes,Pacifica Gardens,Pacifica Gardens,"Special Needs of Students require additional staff/special travel arrangements,Provider Costs,Small Class Size,Other",14,Agree,No,,176.0,,,137,39,,Agreed
+Three Rivers/Josephine County SD,Lorna Byrne Middle School,Other,Pacifica Gardens,,0,93,3 Days 2 Nights,,282.0,No,231,11,31,9,
+""
+Morrow SD 1,Yes,,Tupper Work Center,Small Class Size,27,Agree,No,,278.0,,8,20,250,"This program has been going on for 30+ years with the collaboration of local agencies and neighboring school district.  The staff utilize as much ""free"" support as possible to make this program happen.",Agreed
+Morrow SD 1,Irrigon Elementary School,OMSI,,185,0,75,3 Days 2 Nights,,0,Yes,,,,,
+""
+Newberg SD 29J,Yes,Twin Rocks Outdoor School,Twin Rocks Friends Camp,,0,Agree,Yes,,0,198,,,,,
+Newberg SD 29J,Dundee Elementary,Other,Twin Rocks Outdoor School,,52,0,3 Days 2 Nights,,225.0,No,160,5,50,10,"Dundee Elementary houses our district elementary life skills program to support students with severe physical disabilities, requiring addtional district personnel to attend and support students."
+""
+Oakridge SD 76,Yes,,Willamette Fish Hatchery,,42,Agree,Yes,,0,106,,,,,
+Oakridge SD 76,Lowell Elementary School,Other,Oakridge School District,106,0,30,3 Days 2 Nights,,0,Yes,,,,,
+""
+North Wasco County SD 21,Yes,,Camp Collins,,200,Agree,Yes,,0,190,,,,,
+North Wasco County SD 21,Mosier Community School,Other,Cascade Mountain School,,0,28,3 Days 2 Nights,,325.0,No,265,35,25,,
+""
+Oregon City SD 62,Yes,,McGruder and West Wind,"Traveling Long Distance to Facility,Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements,Other",280,Agree,No,,285.0,,25,35,225,'-Does not fully cover all of the costs above especially the increasing costs of teachers and transportation. Thank you for your consideration!,Agreed
+Oregon City SD 62,Gardiner Middle School,Northwest Regional Education Service District,,,0,285,4 Days 3 Nights,,285.0,No,0,25,35,225,Does not fully cover all of the costs above especially the increasing costs of teachers and transportation. Thank you for your consideration!
+""
+Myrtle Point SD 41,Yes,,Camp Mrytle Wood,,50,Agree,Yes,,0,80,,,,,
+""
+West Linn-Wilsonville SD 3J,Yes,,Cedar Ridge Trickle Creek,,270,Agree,Yes,,0,245,,,,,
+West Linn-Wilsonville SD 3J,Meridian Creek Middle School,Northwest Regional Education Service District,,245,0,135,4 Days 3 Nights,,0,Yes,,,,,
+""
+Paisley SD 11,Yes,,Fremont Ranger Station,Small Class Size,3,Agree,Yes,,0,$80,,,,,
+""
+Nyssa SD 26,Yes,,Ocean Trip to Newport,"Traveling Long Distance to Facility,Need Supplies and Material to start Outdoor School Experience,Special Needs of Students require additional staff/special travel arrangements,Other",0,Agree,No,,390.0,,50,60,280,This trip includes 5 days and 4 nights of traveling across Oregon to the ocean with many students who have never seen the ocean or had an opportunity to experience what we provide due to the outdoor school funding.,Agreed
+""
+Clatskanie SD 6J,Yes,,Hancock Field Station,,50,Agree,Yes,,0,232,,,,,
+""
+North Douglas SD 22,Yes,,OMSI,,35,Agree,Yes,,0,165,,,,,
+""
+Multnomah ESD,Yes,,"Angelos, Arrah Wanna, Canby Grove, Howard, Namanu",Other,89,Agree,No,,94.0,,7,87,,"We are requesting OSU Extension funding above the threshold amount. Although increased participation allowed MESD Outdoor School costs per pupil to reduce for the 1819 school year, the teacher stipend and transportation costs still pushed us beyond the threshold.
+
+Despite this decrease in MESD Outdoor School costs, next year we are committed to providing Diversity, Equity, and Inclusion professional development trainings for all of our leadership and seasonal staff. Our program goals are to develop an equity strategy that further incorporates culturally competent instruction and inclusive practices. Our goal with these initiatives is to continue to engage and provide equitable access for diverse groups of students. 
+
+",Agreed
+Multnomah ESD,Riverdale ,Multnomah Education Service District,,,0,48,6 Days 5 Nights,,472.0,No,414,9,49,,"We are requesting OSU Extension funding above the threshold amount. Although increased participation allowed MESD Outdoor School costs per pupil to reduce for the 1819 school year, the teacher stipend and transportation costs still pushed us beyond the threshold.
+
+Despite this decrease in MESD Outdoor School costs, next year we are committed to providing Diversity, Equity, and Inclusion professional development trainings for all of our leadership and seasonal staff. Our program goals are to develop an equity strategy that further incorporates culturally competent instruction and inclusive practices. Our goal with these initiatives is to continue to engage and provide equitable access for diverse groups of students. 
+"
+""
+Echo SD 5,Yes,,Tupper,,26,Agree,Yes,,0,325,,,,,
+""
+South Wasco County SD 1,Yes,,Twin Rocks Friends Camp,,0,Agree,Yes,,0,200,,,,,
+""
+Eagle Charter,No,,Hancock Field Station,"Traveling Long Distance to Facility,Small Class Size",0,Agree,No,,0,,,,,,
+""
+Ashland SD 5,Yes,,Coastal Discovery Center,,189,Agree,Yes,,0,182,,,,,
+Ashland SD 5,Willow Wind,OMSI,,,0,24,3 Days 2 Nights,,261.0,No,186,43,15,17,"I ask the review board to take into consideration that the per pupil cost for our traditional middle school is well below the allowed limit. Our two choice schools (Willow Wind and John Muir) are much smaller programs, which causes the ""unit cost"" to be much higher. Due to the nature of the two choice schools, perhaps the review board would be willing to base our funding threshold on an aggregate total for all three schools. Thank you for your consideration!"
+""
+St Paul SD 45,Yes,,Unknown,,20,Agree,Yes,,0,370,,,,,
 ""

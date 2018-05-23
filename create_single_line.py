@@ -12,7 +12,7 @@ def tofloat(string):
 def allocatelist(var,times):  #this just allocates the list
     var=[]
     for k in range(times):
-        var.append('_')
+        var.append(' ')
     return var
 
 def get_num_of_schools_row(fullstring):#this figures out how many schools are in a row but scanning until it finds a blank where a school name should be.
@@ -66,7 +66,9 @@ def scrape_data_into_list(fullstring,schnum): #this function scrapes all the dat
     totalperstudent=tofloat(fullstring[ODS_provider_fees[0]+diff])+tofloat(fullstring[transport[0]+diff])+tofloat(fullstring[personnel_stipends[0]+diff])+tofloat(fullstring[programcosts_no_admin_costs[0]+diff])+tofloat(fullstring[details_text_box[0]+diff])    #money math
     #print(str(totalperstudent))  #testing line
     line[9]=totalperstudent#*(fullstring[grade5_attending[0]+diff]+fullstring[grade6_attending[0]+diff])  #
+    line[10]=fullstring[SCH_is_money_enough[0]+diff]
     for k in list(range(5)):
-        line[9+k]=fullstring[ODS_provider_fees[0]+diff+k] #cost per student estimated using the cost breakdown
+
+        line[11+k]=fullstring[ODS_provider_fees[0]+diff+k] #cost per student estimated using the cost breakdown
 
     return line

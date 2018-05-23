@@ -3,7 +3,7 @@
 #the fist number in the list is where it is, the second is where its going, a '-1' indicates that I don't know where its going.
 #all variables consider column A = 0
 checkvariable='check variable is good'
-csvheader=['ESDname','School Name','ODS Provider','Other ODS option','Estimated Cost From School','Grade 5 Students','Grade 6 Students','default money given','total price per student, calculated from school data','ODS Provider Fees','Transportation','Personell Stipends',r'Program Costs (w/o admin fees)','Extra Details from Submitter']
+csvheader=['ESDname','School Name','ODS Provider','Other ODS option','Estimated Cost From School','Grade 5 Students','Grade 6 Students','default money given','total price per student, calculated from school data','did they agree','ODS Provider Fees','Transportation','Personell Stipends',r'Program Costs (w/o admin fees)','Extra Details from Submitter']
 #              0           1           2                    3                   4                             5              6                  7                        8                 9                               10                   11                     12                  13                            14
 
 #ESD info
