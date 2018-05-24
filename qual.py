@@ -80,7 +80,7 @@ with open('outdoor2.csv',newline='') as f, open('output.csv','w',newline='') as 
             rowscraped=scrape_data_into_list(row,k+1)
             #print(str(rowscraped))
             write.writerow(rowscraped)
-        write.writerow([''])
+        #write.writerow([''])
         try:
             row=next(reader)
         except StopIteration:

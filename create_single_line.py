@@ -1,4 +1,5 @@
 from variables import *
+from add_several_strs import *
 
 def tofloat(string):
     try:
@@ -50,25 +51,27 @@ def scrape_data_into_list(fullstring,schnum): #this function scrapes all the dat
 
     diff=(schnum-1)*23#this line allows this function to work for any school in a row
     var=[]
-    line=allocatelist(var,16)
+    line=allocatelist(var,20)
     line[0]=fullstring[ESDname[0]] #one ESD per line so this shouldn't change
-    line[1]=fullstring[(SCHname[0]+diff)] #school name
-    line[2]=fullstring[ODS_provider_name[0]+diff] #ods name
+    line[1]= fullstring[ESD_NUM_OF_SCHOOLS[0]]
+    line[2]=fullstring[(SCHname[0]+diff)] #school name
+    line[3]=fullstring[ODS_provider_name[0]+diff] #ods name
     if fullstring[ODSotheroption[0]+diff] == '':
-        line[3]=''
+        line[4]=''
     else:
-        line[3]=fullstring[ODSotheroption[0]+diff] #ods other option name,
-    line[4]=fullstring[per_student_SCH_EST_cost[0]+diff] #school estimated cost per student
-    line[5]=fullstring[grade5_attending[0]+diff] # of studens
-    line[6]=fullstring[grade6_attending[0]+diff] # of studens
-    line[7]=fullstring[program_days_nights[0]+diff] #length of program
-    line[8]=''#fullstring[]#default $$ per student given length in number form for math
-    totalperstudent=tofloat(fullstring[ODS_provider_fees[0]+diff])+tofloat(fullstring[transport[0]+diff])+tofloat(fullstring[personnel_stipends[0]+diff])+tofloat(fullstring[programcosts_no_admin_costs[0]+diff])+tofloat(fullstring[details_text_box[0]+diff])    #money math
+        line[4]=fullstring[ODSotheroption[0]+diff] #ods other option name,
+    line[5]=fullstring[per_student_SCH_EST_cost[0]+diff] #school estimated cost per student
+    line[6]=fullstring[grade5_attending[0]+diff] # of studens
+    line[7]=fullstring[grade6_attending[0]+diff] # of studens
+    line[8]=fullstring[program_days_nights[0]+diff] #length of program
+    #line[8]=''#fullstring[]#default $$ per student given length in number form for math
+    #totalperstudent=tofloat(fullstring[ODS_provider_fees[0]+diff])+tofloat(fullstring[transport[0]+diff])+tofloat(fullstring[personnel_stipends[0]+diff])+tofloat(fullstring[programcosts_no_admin_costs[0]+diff])+tofloat(fullstring[details_text_box[0]+diff])    #money math
     #print(str(totalperstudent))  #testing line
-    line[9]=totalperstudent#*(fullstring[grade5_attending[0]+diff]+fullstring[grade6_attending[0]+diff])  #
     line[10]=fullstring[SCH_is_money_enough[0]+diff]
-    for k in list(range(5)):
+    line[11]=fullstring[SCH_if_threshhold_enough_what_is_needed[0]+diff]
+    for k in list(range(4)):
+        line[12+k]=fullstring[ODS_provider_fees[0]+diff+k] #cost per student estimated using the cost breakdown
+    line[9]=addthemup(line[6],line[7],line[12],line[3],line[14],line[15],0)
 
-        line[11+k]=fullstring[ODS_provider_fees[0]+diff+k] #cost per student estimated using the cost breakdown
-
+    line[16]=multiplythethree(line[6],line[7],line[9],line[11],line[2])
     return line
