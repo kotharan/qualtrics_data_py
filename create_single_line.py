@@ -16,7 +16,7 @@ def allocatelist(var,times):  #this just allocates the list
         var.append(' ')
     return var
 
-def get_num_of_schools_row(fullstring):#this figures out how many schools are in a row but scanning until it finds a blank where a school name should be.
+def get_num_of_schools_row(fullstring):#this figures out how many schools are in a row by scanning until it finds a blank where a school name should be.
     try:
         if fullstring[SCHname[0]] != '':
             num=1
@@ -30,7 +30,7 @@ def get_num_of_schools_row(fullstring):#this figures out how many schools are in
     run=1
     while run != 0:
         try:
-            if fullstring[(SCHname[0]+run*sep)] !='':
+            if (fullstring[(SCHname[0]+run*sep)] !='') or (fullstring[(SCHname[0]+run*sep)] !='Agreed'):
                 run=run+1
                 num=run
             else:
