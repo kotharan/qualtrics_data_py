@@ -1,5 +1,5 @@
 
-def addthemup(n1,n2,n3,n4,n5,n6,n7):
+def addthemup(n1,n2,n3,n4,n5,n6,n7):  #this disgusting function turns strings into numbers for arithmatic, then adds them
 
     try:
         n1=float(n1)
@@ -32,7 +32,7 @@ def addthemup(n1,n2,n3,n4,n5,n6,n7):
     out= (n3+n4+n5+n6+n7)
     return str(out)
 
-def multiplythethree(n1,n2,n3,n4,schoolname):
+def multiplythethree(n1,n2,n3,n4,schoolname):  #this generates the total amount of money the school wants
         try:
             n1=float(n1)
         except (ValueError, IndexError):
@@ -51,7 +51,7 @@ def multiplythethree(n1,n2,n3,n4,schoolname):
             n4=0
 
         if (n1+n2)==0:
-            print(schoolname,': no student numbers found')
+            print(schoolname,': no student numbers found')  #this will show up if a school didn't list any students
             return 'no student numbers found'
         else:
             students =n1+n2
@@ -64,7 +64,7 @@ def multiplythethree(n1,n2,n3,n4,schoolname):
             #print('using n3=',str(n3), ' total= ',str(students*price))
             return str(students*price)
         elif (n3==0)&(n4 ==0):
-            print(schoolname,': no price per student found')
+            print(schoolname,': no price per student found') #this will show up if a school doesnt want any money.
             return 'no price per student found'
         else:
             print(schoolname,': unknown error')
