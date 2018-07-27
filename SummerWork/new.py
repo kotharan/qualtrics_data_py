@@ -74,7 +74,7 @@ worksheet1.write('H2', sheet1_Data[7].value )
 
 
 #This sheet will store data from option 3 to 16
-sheet2_Data = [first_sheet.cell(17,6),first_sheet.cell(18,6),first_sheet.cell(19,6),first_sheet.cell(20,6),first_sheet.cell(21,6),first_sheet.cell(26,2),first_sheet.cell(27,2),first_sheet.cell(28,2),first_sheet.cell(29,2),first_sheet.cell(30,2),first_sheet.cell(31,2),first_sheet.cell(32,2),first_sheet.cell(26,5),first_sheet.cell(27,5),first_sheet.cell(28,5),first_sheet.cell(29,5),first_sheet.cell(30,5),first_sheet.cell(31,5),first_sheet.cell(34,1),first_sheet.cell(35,1),first_sheet.cell(37,1),first_sheet.cell(38,1),first_sheet.cell(40,1),first_sheet.cell(41,1),first_sheet.cell(43,1),first_sheet.cell(44,1),first_sheet.cell(46,1),first_sheet.cell(47,2),first_sheet.cell(48,2),first_sheet.cell(49,2),first_sheet.cell(50,2),first_sheet.cell(51,2),first_sheet.cell(52,2),first_sheet.cell(53,2),first_sheet.cell(55,3),first_sheet.cell(57,1),first_sheet.cell(58,1),first_sheet.cell(60,1),first_sheet.cell(61,1),first_sheet.cell(63,1),first_sheet.cell(64,1),first_sheet.cell(64,2),first_sheet.cell(65,1),first_sheet.cell(65,2),first_sheet.cell(66,1),first_sheet.cell(66,2),first_sheet.cell(67,1),first_sheet.cell(67,2),first_sheet.cell(68,1),first_sheet.cell(68,2),first_sheet.cell(69,1),first_sheet.cell(69,2),first_sheet.cell(70,1),first_sheet.cell(70,2),first_sheet.cell(71,1),first_sheet.cell(71,2),first_sheet.cell(72,1),first_sheet.cell(72,2),first_sheet.cell(73,1),first_sheet.cell(73,2),first_sheet.cell(74,1),first_sheet.cell(74,2),first_sheet.cell(75,1),first_sheet.cell(75,2),first_sheet.cell(76,1),first_sheet.cell(76,2),first_sheet.cell(77,1),first_sheet.cell(77,2)] # Redefining the same variable cell to use it for another worksheet
+sheet2_Data = [first_sheet.cell(17,6),first_sheet.cell(18,6),first_sheet.cell(19,6),first_sheet.cell(20,6),first_sheet.cell(21,6),first_sheet.cell(26,2),first_sheet.cell(27,2),first_sheet.cell(28,2),first_sheet.cell(29,2),first_sheet.cell(30,2),first_sheet.cell(31,2),first_sheet.cell(32,2),first_sheet.cell(26,5),first_sheet.cell(27,5),first_sheet.cell(28,5),first_sheet.cell(29,5),first_sheet.cell(30,5),first_sheet.cell(31,5),first_sheet.cell(34,1),first_sheet.cell(35,1),first_sheet.cell(37,1),first_sheet.cell(38,1),first_sheet.cell(40,1),first_sheet.cell(41,1),first_sheet.cell(43,1),first_sheet.cell(44,1),first_sheet.cell(46,1),first_sheet.cell(47,2),first_sheet.cell(48,2),first_sheet.cell(49,2),first_sheet.cell(50,2),first_sheet.cell(51,2),first_sheet.cell(52,2),first_sheet.cell(53,2),first_sheet.cell(55,3),first_sheet.cell(57,1),first_sheet.cell(58,1),first_sheet.cell(60,1),first_sheet.cell(61,1),first_sheet.cell(63,1),first_sheet.cell(64,1),first_sheet.cell(64,2),first_sheet.cell(65,1),first_sheet.cell(65,2),first_sheet.cell(66,1),first_sheet.cell(66,2),first_sheet.cell(67,1),first_sheet.cell(67,2),first_sheet.cell(68,1),first_sheet.cell(68,2),first_sheet.cell(69,1),first_sheet.cell(69,2),first_sheet.cell(70,1),first_sheet.cell(70,2),first_sheet.cell(71,1),first_sheet.cell(71,2),first_sheet.cell(72,1),first_sheet.cell(72,2),first_sheet.cell(73,1),first_sheet.cell(73,2),first_sheet.cell(74,1),first_sheet.cell(74,2),first_sheet.cell(75,1),first_sheet.cell(75,2),first_sheet.cell(76,1),first_sheet.cell(76,2),first_sheet.cell(77,1),first_sheet.cell(77,2),first_sheet.cell(79,1),first_sheet.cell(80,1),first_sheet.cell(80,2),first_sheet.cell(81,1),first_sheet.cell(81,2),first_sheet.cell(82,1),first_sheet.cell(82,2),first_sheet.cell(83,1),first_sheet.cell(83,2),first_sheet.cell(84,1),first_sheet.cell(84,2),first_sheet.cell(85,1),first_sheet.cell(85,2),first_sheet.cell(86,1),first_sheet.cell(86,2),first_sheet.cell(87,1),first_sheet.cell(87,2),first_sheet.cell(88,1),first_sheet.cell(88,2),first_sheet.cell(89,1),first_sheet.cell(89,2),first_sheet.cell(90,1),first_sheet.cell(90,2),first_sheet.cell(92,1),first_sheet.cell(93,1),first_sheet.cell(95,1),first_sheet.cell(96,1),first_sheet.cell(98,1),first_sheet.cell(99,1)] # Redefining the same variable cell to use it for another worksheet
 
 worksheet2 = workbook.add_worksheet('Other Info') #Creating the second worksheet to write into
 #worksheet2.set_column(0, 1, 30)   # Columns [Start-column,End-column,Width] width set to 30.
@@ -218,6 +218,52 @@ worksheet2.write('AU3', sheet2_Data[65].value) # This is the answer for option 1
 worksheet2.write('AV2', sheet2_Data[66].value) # This is the subpart for option 12 from the main spreadsheet
 worksheet2.write('AV3', sheet2_Data[67].value) # This is the answer for option 12 from the main spreadsheet
 
-#Continue from adding values  of the option 13
+#################################################33333
+#######################################################
+
+worksheet2.write('AW1', sheet2_Data[68].value,cell_format) # This is the question for option 13 from the main spreadsheet
+worksheet2.write('AW2', sheet2_Data[69].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('AW3', sheet2_Data[70].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('AX2', sheet2_Data[71].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('AX3', sheet2_Data[72].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('AY2', sheet2_Data[73].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('AY3', sheet2_Data[74].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('AZ2', sheet2_Data[75].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('AZ3', sheet2_Data[76].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BA2', sheet2_Data[77].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BA3', sheet2_Data[78].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BB2', sheet2_Data[79].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BB3', sheet2_Data[80].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BC2', sheet2_Data[81].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BC3', sheet2_Data[82].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BD2', sheet2_Data[83].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BD3', sheet2_Data[84].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BE2', sheet2_Data[85].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BE3', sheet2_Data[86].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BF2', sheet2_Data[87].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BF3', sheet2_Data[88].value) # This is the answer for option 13 from the main spreadsheet
+
+worksheet2.write('BG2', sheet2_Data[89].value) # This is the subpart for option 13 from the main spreadsheet
+worksheet2.write('BG3', sheet2_Data[90].value) # This is the answer for option 13 from the main spreadsheet
+
+
+worksheet2.write('BH1', sheet2_Data[91].value,cell_format) # This is the question for option 14 from the main spreadsheet
+worksheet2.write('BH3', sheet2_Data[92].value) # This is the answer for option 14 from the main spreadsheet
+
+worksheet2.write('BI1', sheet2_Data[93].value,cell_format) # This is the question for option 15 from the main spreadsheet
+worksheet2.write('BI3', sheet2_Data[94].value) # This is the answer for option 15 from the main spreadsheet
+
+worksheet2.write('BJ1', sheet2_Data[95].value,cell_format) # This is the question for option 16 from the main spreadsheet
+worksheet2.write('BJ3', sheet2_Data[96].value) # This is the answer for option 16 from the main spreadsheet
+
 
 workbook.close()
