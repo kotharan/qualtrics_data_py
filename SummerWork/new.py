@@ -273,11 +273,12 @@ worksheet2.write('BJ1', sheet2_Data[95].value,cell_format) # This is the questio
 worksheet2.write('BJ3', sheet2_Data[96].value) # This is the answer for option 16 from the main spreadsheet
 
 
-# row = 3   # Shortcut way to print all the content data in a row
-# col = 2
-# for items in sheet2_Data:
-#     worksheet2.write(row,col,items.value)
-#     col += 1
+row = 3   # Shortcut way to print all the content data in a row
+col = 2
+for items in sheet2_Data:
+    #if items == sheet2_Data[18]:
+    worksheet2.write(row,col,items.value)
+    col += 1
 
 workbook.close()
 print (len(list), "<<==Total Number of Documents compiled")
