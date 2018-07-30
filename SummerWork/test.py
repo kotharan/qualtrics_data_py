@@ -27,6 +27,7 @@ worksheet1 = workbook.add_worksheet('Sch & Dis Contact Info') #Creating new work
 cell_format = workbook.add_format({'color':'red'})
 bold = workbook.add_format({'bold': True})
 
+# This funtion stores just the questions and the answers are stored in get_ans funtion
 
 def get_ques(current_sheet):
     main_question=[[worksheet1.write('A1', "School Name :") ,worksheet1.write('B1', "District Name :" ),worksheet1.write('A1', "School Name :"),worksheet1.write('B1', "District Name :" ),worksheet1.write('C1', "School contact name: " ),worksheet1.write('D1', "District/ESD contact name" ),worksheet1.write('E1', "School contact email" ),worksheet1.write('F1', "District/ESD contact email" ),worksheet1.write('G1', "School contact phone" ),worksheet1.write('H1', "District/ESD contact phone"),worksheet1.write('I1', "Topic Content: ",cell_format),worksheet1.write('N1', "Program Content: ",cell_format),worksheet1.write('AE1',current_sheet.cell(46,1).value,cell_format),worksheet1.write('AM1',current_sheet.cell(57,1).value,cell_format),worksheet1.write('AN1',current_sheet.cell(60,1).value,cell_format),worksheet1.write('AO1',current_sheet.cell(63,1).value,cell_format),worksheet1.write('BC1',current_sheet.cell(79,1).value,cell_format),worksheet1.write('BN1',current_sheet.cell(92,1).value,cell_format),worksheet1.write('BO1',current_sheet.cell(95,1).value,cell_format),worksheet1.write('BP1',current_sheet.cell(98,1).value,cell_format)],[current_sheet.cell(34,1),current_sheet.cell(37,1),current_sheet.cell(40,1),current_sheet.cell(43,1)]]
@@ -49,24 +50,23 @@ def get_ans(workbook_count):
     for entry in listOfFiles:
         if fnmatch.fnmatch(entry, pattern): # Stores the name of all .xlsx format in a list so that we can take one file at a time
                 list.append(entry)
-                name_of_current_workbook = r"C:\Users\DELL\Documents\GitHub\qualtrics_data_py\SummerWork\All_Reports" + "\\" + entry
-                book = xlrd.open_workbook(name_of_current_workbook) # Book is the name of the workbook of the raw data
+                name_of_current_workbook = r"C:\Users\DELL\Documents\GitHub\qualtrics_data_py\SummerWork\All_Reports" + "\\" + entry # Stored the name of current working workbook
+                book = xlrd.open_workbook(name_of_current_workbook) # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
 
-                current_sheet = book.sheet_by_index(0) # ---------get the first worksheet
-                print ("Sheet Name:",current_sheet.name)
+                #print (book.sheet_names()) #------------------------print sheet names of a book
 
-                get_ques(current_sheet)
-                answers_from_sheet = [current_sheet.cell(1,1),current_sheet.cell(1,3),current_sheet.cell(8,2),current_sheet.cell(8,5),current_sheet.cell(9,2),current_sheet.cell(9,5),current_sheet.cell(10,2),current_sheet.cell(10,5),current_sheet.cell(17,6),current_sheet.cell(18,6),current_sheet.cell(19,6),current_sheet.cell(20,6),current_sheet.cell(21,6),current_sheet.cell(26,2),current_sheet.cell(27,2),current_sheet.cell(28,2),current_sheet.cell(29,2),current_sheet.cell(30,2),current_sheet.cell(31,2),current_sheet.cell(32,2),current_sheet.cell(26,5),current_sheet.cell(27,5),current_sheet.cell(28,5),current_sheet.cell(29,5),current_sheet.cell(30,5),current_sheet.cell(31,5),current_sheet.cell(35,1),current_sheet.cell(38,1),current_sheet.cell(41,1),current_sheet.cell(44,1),current_sheet.cell(47,2),current_sheet.cell(48,2),current_sheet.cell(49,2),current_sheet.cell(50,2),current_sheet.cell(51,2),current_sheet.cell(52,2),current_sheet.cell(53,2),current_sheet.cell(55,3),current_sheet.cell(58,1),current_sheet.cell(61,1),current_sheet.cell(64,2),current_sheet.cell(65,2),current_sheet.cell(66,2),current_sheet.cell(67,2),current_sheet.cell(68,2),current_sheet.cell(69,2),current_sheet.cell(70,2),current_sheet.cell(71,2),current_sheet.cell(72,2),current_sheet.cell(73,2),current_sheet.cell(74,2),current_sheet.cell(75,2),current_sheet.cell(76,2),current_sheet.cell(77,2),current_sheet.cell(80,2),current_sheet.cell(81,2),current_sheet.cell(82,2),current_sheet.cell(83,2),current_sheet.cell(84,2),current_sheet.cell(85,2),current_sheet.cell(86,2),current_sheet.cell(87,2),current_sheet.cell(88,2),current_sheet.cell(89,2),current_sheet.cell(90,2),current_sheet.cell(93,1),current_sheet.cell(96,1),current_sheet.cell(99,1)]
+                for sheet_count in range(len(book.sheet_names())):  # To check if it has more than one sheet, if yes , then go through all of them
+                    current_sheet = book.sheet_by_index(sheet_count) # ---------get the first worksheet
+                    print ("Sheet Name:",current_sheet.name)
+                    get_ques(current_sheet)
+                    answers_from_sheet = [current_sheet.cell(1,1),current_sheet.cell(1,3),current_sheet.cell(8,2),current_sheet.cell(8,5),current_sheet.cell(9,2),current_sheet.cell(9,5),current_sheet.cell(10,2),current_sheet.cell(10,5),current_sheet.cell(17,6),current_sheet.cell(18,6),current_sheet.cell(19,6),current_sheet.cell(20,6),current_sheet.cell(21,6),current_sheet.cell(26,2),current_sheet.cell(27,2),current_sheet.cell(28,2),current_sheet.cell(29,2),current_sheet.cell(30,2),current_sheet.cell(31,2),current_sheet.cell(32,2),current_sheet.cell(26,5),current_sheet.cell(27,5),current_sheet.cell(28,5),current_sheet.cell(29,5),current_sheet.cell(30,5),current_sheet.cell(31,5),current_sheet.cell(35,1),current_sheet.cell(38,1),current_sheet.cell(41,1),current_sheet.cell(44,1),current_sheet.cell(47,2),current_sheet.cell(48,2),current_sheet.cell(49,2),current_sheet.cell(50,2),current_sheet.cell(51,2),current_sheet.cell(52,2),current_sheet.cell(53,2),current_sheet.cell(55,3),current_sheet.cell(58,1),current_sheet.cell(61,1),current_sheet.cell(64,2),current_sheet.cell(65,2),current_sheet.cell(66,2),current_sheet.cell(67,2),current_sheet.cell(68,2),current_sheet.cell(69,2),current_sheet.cell(70,2),current_sheet.cell(71,2),current_sheet.cell(72,2),current_sheet.cell(73,2),current_sheet.cell(74,2),current_sheet.cell(75,2),current_sheet.cell(76,2),current_sheet.cell(77,2),current_sheet.cell(80,2),current_sheet.cell(81,2),current_sheet.cell(82,2),current_sheet.cell(83,2),current_sheet.cell(84,2),current_sheet.cell(85,2),current_sheet.cell(86,2),current_sheet.cell(87,2),current_sheet.cell(88,2),current_sheet.cell(89,2),current_sheet.cell(90,2),current_sheet.cell(93,1),current_sheet.cell(96,1),current_sheet.cell(99,1)]
 
-                col = 0
-                for items in answers_from_sheet:
-                    #if items == sheet2_Data[18]:
-                    worksheet1.write(row,col,items.value)
-                    col += 1
-                row += 1 # To print the next workbook values in the next row
-
-
-
+                    col = 0
+                    for items in answers_from_sheet:
+                        #if items == sheet2_Data[18]:
+                        worksheet1.write(row,col,items.value)
+                        col += 1
+                    row += 1 # To print the next workbook values in the next row
 
 get_ans(workbook_count)
 
