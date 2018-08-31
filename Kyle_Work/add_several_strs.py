@@ -1,5 +1,5 @@
 
-def addthemup(n1,n2,n3,n4,n5,n6,n7):  #this disgusting function turns strings into numbers for arithmatic, then adds them
+def addthemup(n1,n2,n3,n4,n5,n6,n7):  #this function turns strings into numbers for arithmatic, then adds them
 
     try:
         n1=float(n1)
