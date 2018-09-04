@@ -9,13 +9,13 @@ worksheet = inputbook.sheet_by_index(0)
 
 #===========CREATING A WORKBOOK TO STORE======================#
 
-workbook = xlsxwriter.Workbook('.\SummerWork-2\OUTPUT.xlsx') #Creating new workbook to write into
-outWorkSheet = workbook.add_worksheet('All Schools Info') #Creating new worksheet to write into
-outWorkSheet1 = workbook.add_worksheet('Just School') #Creating new worksheet to write into
+output_Workbook = xlsxwriter.Workbook('.\SummerWork-2\OUTPUT.xlsx') #Creating new output_Workbook to write into
+outWorkSheet = output_Workbook.add_worksheet('All Schools Info') #Creating new worksheet to write into
+outWorkSheet1 = output_Workbook.add_worksheet('Just School') #Creating new worksheet to write into
 
 
-cell_format = workbook.add_format({'color':'red'}) #To do cell text formatting
-bold = workbook.add_format({'bold': True})
+cell_format = output_Workbook.add_format({'color':'red'}) #To do cell text formatting
+bold = output_Workbook.add_format({'bold': True})
 
 
 # For heading
@@ -36,11 +36,11 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             cell_obj = worksheet.cell(row, col).value  # Get cell object by row, col
             outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)
             Write_Start_from_col +=1
-        if(worksheet.cell(row, 23).value > 1):
+        if(worksheet.cell(row, 23).value > 1.0):
             num_of_schools = int(worksheet.cell(row, 23).value)
             Write_Start_from_col=38
             Write_Start_from_row+=1
-            for col in range(62,24*num_of_schools):    # This is 24 times num_of_schools of schools because there are 24 questions for each school
+            for col in range(62,29*(num_of_schools+1)):    # This is 24 times num_of_schools of schools because there are 24 questions for each school
                 cell_data = worksheet.cell(row, col).value  # Get cell object by row, col
                 outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
@@ -49,9 +49,13 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
                     Write_Start_from_row += 1
 
 
+
+
         #    OutputSchools_Data(row,int(num_of_schools),1,38)
         Write_Start_from_col=0
         Write_Start_from_row+=1
+
+DataLoop(3,20,0,62,1,0)
 
 def OutputSchools_Header():
     cols = 38
@@ -60,19 +64,6 @@ def OutputSchools_Header():
         outWorkSheet1.write(0,cols,head_obj.value)
         cols += 1
 
-# def OutputSchools_Data(row,num_of_schools,Write_Start_from_row,Write_Start_from_col):
-#     At_62 = 62
-#     for col in range(At_62,24**num_of_schools):
-#         cell_data = worksheet.cell(row, col).value  # Get cell object by row, col
-#         outWorkSheet1.write(Write_Start_from_row,Write_Start_from_col,cell_data)
-#         Write_Start_from_col +=1
-#
-#     Write_Start_from_col=0
-#     Write_Start_from_row+=1
-#
-
-DataLoop(3,20,0,62,1,0)
-OutputSchools_Header()
-workbook.close()
+output_Workbook.close()
 
 # For now it is reading till column 62 and then skips the further data of other school and goes to the next line
