@@ -3,13 +3,15 @@ import xlrd # To work with spreadsheet/excel data
 import os, fnmatch # To work with file location
 import xlsxwriter
 
+#Pull out working dir path
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-inputbook = xlrd.open_workbook(r"C:\Users\DELL\Documents\GitHub\qualtrics_data_py\Anand_Work\SummerWork-2\outdoor2.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
+inputbook = xlrd.open_workbook(dir_path+"\outdoor2.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
 worksheet = inputbook.sheet_by_index(0)
 
 #===========CREATING A WORKBOOK TO STORE======================#
 
-output_Workbook = xlsxwriter.Workbook('.\Anand_Work\SummerWork-2\OUTPUT1.xlsx') #Creating new output_Workbook to write into
+output_Workbook = xlsxwriter.Workbook(dir_path+'\OUTPUT.xlsx') #Creating new output_Workbook to write into
 outWorkSheet = output_Workbook.add_worksheet('All Schools Info') #Creating new worksheet to write into
 
 # Used only the bold ones to see the schoolnames and their other data other than the first school data
