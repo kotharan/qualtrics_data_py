@@ -1,4 +1,4 @@
-For Ms. Priscilla's Code [../SummerWork-2/Each_School_data.py] ::
+For [../SummerWork-2/Each_School_data.py] ::
 
 			** BEFORE ADDING A NEW DOCUMENT READ THIS**
 
@@ -22,7 +22,7 @@ For Ms. Priscilla's Code [../SummerWork-2/Each_School_data.py] ::
 ==============================================================================================================================
 
 
-For Ms. Rita's Code [../SummerWork/Code.py] :: 
+For [../SummerWork/Code.py] :: 
 
 			** BEFORE ADDING A NEW DOCUMENT READ THIS**
 			
