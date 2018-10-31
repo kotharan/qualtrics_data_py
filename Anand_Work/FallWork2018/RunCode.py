@@ -72,12 +72,12 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             Write_Start_from_row+=1
             Facility_Row_End = 38 + (10 * num_of_facilities)
 
-            for col in range(39,Facility_Row_End):                                 # This is 29 times num_of_facilities of schools because there are 29 questions for each school
+            for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of schools because there are 29 questions for each school
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
                 outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
                 Write_Start_from_col +=1
 
-                if Write_Start_from_col == 48:
+                if Write_Start_from_col == 49:
                     Write_Start_from_col = 39
                     Write_Start_from_row += 1
 
