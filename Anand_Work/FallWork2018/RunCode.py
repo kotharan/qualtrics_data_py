@@ -2,6 +2,7 @@ import glob # To search for extension
 import xlrd # To work with spreadsheet/excel data
 import os, fnmatch # To work with file location
 import xlsxwriter
+from itertools import chain
 
 #Pull out working dir path
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -20,9 +21,14 @@ bold = output_Workbook.add_format({'bold': True})
 
 
 # For headings
-for headcol in range(0,49):
-    head_obj = worksheet.cell(1, headcol)  # Get cell object by row, col
-    outWorkSheet.write(0,headcol,head_obj.value)
+newHeadcol = 49                                      # For the headings of the next section after a gap of data 
+for headcol in chain(range(0,49),range(139,160)):    # Since we are taking heads after a gap of data I have specified different ranges 
+    head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
+    if headcol <=49:                                 # For 1st section of data the headings should be written
+        outWorkSheet.write(0,headcol,head_obj.value)
+    elif headcol>49 and headcol<=159:                # For next section heading should be written continuously after the first set of heading avoding the loop headings
+        outWorkSheet.write(0,newHeadcol,head_obj.value)
+        newHeadcol+=1
 
 
 # For printing data
@@ -57,22 +63,18 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
     for row in range(Read_Start_from_row , till_row):
         for col in range(Read_Start_from_col, till_col):
             cell_obj = worksheet.cell(row, col).value                                # Get cell object by row, col
-            outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)
+            outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)     # Write the cell_obj in OUTPUT file
             Write_Start_from_col +=1
+        
         if(worksheet.cell(row, 19).value == ""):
             print("None")
-        elif (worksheet.cell(row, 19).value > 1):
-
-
-
-        # if( str(worksheet.cell(row, 19).value) >= '-1'): 
-        #     print("hwea")                         # This checks if there are more than one school and loops to each school data if there is
-            num_of_facilities = int(worksheet.cell(row, 19).value)
-            Write_Start_from_col=39                                                  # If there is more than one school print the next school data below the first school data
+        elif (worksheet.cell(row, 19).value > 1):                                    # This checks if there are more than one facility and loops to each facility data if there is
+            num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
+            Write_Start_from_col=39                                                  # If there is more than one facility print the next facility data below the first facility data
             Write_Start_from_row+=1
             Facility_Row_End = 38 + (10 * num_of_facilities)
 
-            for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of schools because there are 29 questions for each school
+            for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
                 outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
                 Write_Start_from_col +=1
