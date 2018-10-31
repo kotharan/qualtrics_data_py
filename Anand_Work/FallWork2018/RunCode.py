@@ -20,7 +20,7 @@ bold = output_Workbook.add_format({'bold': True})
 
 
 # For headings
-for headcol in range(0,45):
+for headcol in range(0,49):
     head_obj = worksheet.cell(1, headcol)  # Get cell object by row, col
     outWorkSheet.write(0,headcol,head_obj.value)
 
@@ -59,27 +59,33 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             cell_obj = worksheet.cell(row, col).value                                # Get cell object by row, col
             outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)
             Write_Start_from_col +=1
+        if(worksheet.cell(row, 19).value == ""):
+            print("None")
+        elif (worksheet.cell(row, 19).value > 1):
 
-        # if( (worksheet.cell(row, 19).value) > 1):                          # This checks if there are more than one school and loops to each school data if there is
-        #     num_of_facilities = int(worksheet.cell(row, 19).value)
-        #     Write_Start_from_col=40                                                  # If there is more than one school print the next school data below the first school data
-        #     Write_Start_from_row+=1
-        #     Facility_Row_End = 10*(num_of_facilities+1)
 
-        #     for col in range(40,Facility_Row_End):                                 # This is 29 times num_of_facilities of schools because there are 29 questions for each school
-        #         cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-        #         outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
-        #         Write_Start_from_col +=1
 
-        #         if Write_Start_from_col == 10:
-        #             Write_Start_from_col = 40
-        #             Write_Start_from_row += 1
+        # if( str(worksheet.cell(row, 19).value) >= '-1'): 
+        #     print("hwea")                         # This checks if there are more than one school and loops to each school data if there is
+            num_of_facilities = int(worksheet.cell(row, 19).value)
+            Write_Start_from_col=39                                                  # If there is more than one school print the next school data below the first school data
+            Write_Start_from_row+=1
+            Facility_Row_End = 38 + (10 * num_of_facilities)
+
+            for col in range(39,Facility_Row_End):                                 # This is 29 times num_of_facilities of schools because there are 29 questions for each school
+                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                Write_Start_from_col +=1
+
+                if Write_Start_from_col == 48:
+                    Write_Start_from_col = 39
+                    Write_Start_from_row += 1
 
         Write_Start_from_col=0                                                         # Start from the col 0 after you print data of a district
         Write_Start_from_row+=1                                                        # Go to the next row as well
 
 
 
-DataLoop(3,worksheet.nrows,0,45,1,0)                                                   # Calling then function DataLoop
+DataLoop(3,worksheet.nrows,0,49,1,0)                                                   # Calling then function DataLoop
 
 output_Workbook.close()                                                                # Close the workbook when done
