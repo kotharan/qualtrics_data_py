@@ -68,7 +68,7 @@ def DataLoop(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
         
         if(worksheet.cell(row, 19).value == ""):
             print("None")
-        elif (worksheet.cell(row, 19).value > 1):                                    # This checks if there are more than one facility and loops to each facility data if there is
+        elif (worksheet.cell(row, 19).value > 1):                                    # Loop for Section 3B in qualtrics. This checks if there are more than one facility and loops to each facility data if there is
             num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
             Write_Start_from_col=39                                                  # If there is more than one facility print the next facility data below the first facility data
             Write_Start_from_row+=1
