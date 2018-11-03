@@ -95,27 +95,27 @@ def Section4(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)     # Write the cell_obj in OUTPUT file
             Write_Start_from_col +=1
         
-        if(worksheet.cell(row, 19).value == ""):
-            pass
-        elif (worksheet.cell(row, 19).value > 1):                                    # Loop for Section 3B in qualtrics. This checks if there are more than one facility and loops to each facility data if there is
-            num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
-            Write_Start_from_col=39                                                  # If there is more than one facility print the next facility data below the first facility data
-            Write_Start_from_row+=1
-            Facility_Row_End = 38 + (10 * num_of_facilities)
+        # if(worksheet.cell(row, 19).value == ""):
+        #     pass
+        # elif (worksheet.cell(row, 19).value > 1):                                    # Loop for Section 3B in qualtrics. This checks if there are more than one facility and loops to each facility data if there is
+        #     num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
+        #     Write_Start_from_col=49                                                  # If there is more than one facility print the next facility data below the first facility data
+        #     Write_Start_from_row+=1
+        #     Facility_Row_End = 48 + (10 * num_of_facilities)
 
-            for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
-                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
-                Write_Start_from_col +=1
+        #     for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
+        #         cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+        #         outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+        #         Write_Start_from_col +=1
 
-                if Write_Start_from_col == 49:
-                    Write_Start_from_col = 39
-                    Write_Start_from_row += 1
+        #         if Write_Start_from_col == 49:
+        #             Write_Start_from_col = 39
+        #             Write_Start_from_row += 1
 
-        Write_Start_from_col=0                                                         # Start from the col 0 after you print data of a district
+        Write_Start_from_col=49                                                         # Start from the col 0 after you print data of a district
         Write_Start_from_row+=1                                                        # Go to the next row as well
 
 Section5(3,worksheet.nrows,0,49,1,0)                                                   # Calling then function Section5
-Section4(3,worksheet.nrows,139,159,1,139)                                                   # Calling then function Section5
+Section4(3,worksheet.nrows,139,160,1,49)                                                   # Calling then function Section5
 
 output_Workbook.close()                                                                # Close the workbook when done
