@@ -72,11 +72,11 @@ def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
             Write_Start_from_col=39                                                  # If there is more than one facility print the next facility data below the first facility data
             Write_Start_from_row+=1
-            Facility_Row_End = 38 + (10 * num_of_facilities)
+            Facility_Row_End = 39 + (10 * num_of_facilities)
 
             for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 49:
@@ -101,11 +101,11 @@ def Section4(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
             Write_Start_from_col=49                                                  # If there is more than one facility print the next facility data below the first facility data
             Write_Start_from_row+=1
-            Facility_Row_End = 138 + (21 * num_of_facilities)                       # 138 is 1 minus of starting read col 
+            Facility_Row_End = 139 + (21 * num_of_facilities)                       # 138 is 1 minus of starting read col 
 
             for col in range(160,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 70:                                      # 70 is end col of 1st loop
