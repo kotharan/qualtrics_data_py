@@ -81,7 +81,7 @@ def Section3b(Read_Start_from_row, till_row , Read_Start_from_col , till_col , W
 
             for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 49:
@@ -110,7 +110,7 @@ def Section4(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(160,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 70:                                      # 70 is end col of 1st loop
@@ -139,7 +139,11 @@ def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(363,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+<<<<<<< HEAD
                 outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
+=======
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+>>>>>>> workBranch
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 84:                                      # 70 is end col of 1st loop
