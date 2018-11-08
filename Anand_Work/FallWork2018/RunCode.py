@@ -42,7 +42,7 @@ for headcol in chain(range(0,49),range(139,160),range(349,363)):    # Since we a
 Functions =>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Section5(Parameters)              ::>     This starts reading from the 3rd row of the input xlrd data and keeps on looping till the 62th column.
+Section3b(Parameters)              ::>     This starts reading from the 3rd row of the input xlrd data and keeps on looping till the 62th column.
                                 Then it checks for a cell which speciefies the number of facilities that ? has and loops to each facility's
                                 data and prints in under the main ? row. After it is done looping through all the facilitys it also creates an
                                 empty row so the other ? data is easily identifyable. It also applies bold cell format to each facility data after
@@ -62,7 +62,7 @@ Parameters =>
 
 """
 
-def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Write_Start_from_row , Write_Start_from_col ):
+def Section3b(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Write_Start_from_row , Write_Start_from_col ):
             # Read of row start from the data file                             # Writing in the OUTPUT file
 
     for row in range(Read_Start_from_row , till_row):
@@ -120,10 +120,39 @@ def Section4(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
         Write_Start_from_col=49                                                        # Start from the col 49 after you print data of a facility
         Write_Start_from_row+=1                                                        # Go to the next row as well
 
-Section5(3,worksheet.nrows,0,49,1,0)                                                   # Calling then function Section5
-Section4(3,worksheet.nrows,139,160,1,49)                                               # Calling then function Section5
+def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Write_Start_from_row , Write_Start_from_col ):
+            # Read of row start from the data file                             # Writing in the OUTPUT file
+
+    for row in range(Read_Start_from_row , till_row):
+        for col in range(Read_Start_from_col, till_col):
+            cell_obj = worksheet.cell(row, col).value                                # Get cell object by row, col
+            outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)     # Write the cell_obj in OUTPUT file
+            Write_Start_from_col +=1
+        
+        if(worksheet.cell(row, 19).value == ""):
+            pass
+        elif (worksheet.cell(row, 19).value > 1):                                    # Loop for Section 3B in qualtrics. This checks if there are more than one facility and loops to each facility data if there is
+            num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
+            Write_Start_from_col=70                                                  # If there is more than one facility print the next facility data below the first facility data
+            Write_Start_from_row+=1
+            Facility_Row_End = 349 + (14 * num_of_facilities)                       # 139 of starting read col 
+
+            for col in range(363,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
+                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
+                Write_Start_from_col +=1
+
+                if Write_Start_from_col == 84:                                      # 70 is end col of 1st loop
+                    Write_Start_from_col = 70
+                    Write_Start_from_row += 1
+
+        Write_Start_from_col=70                                                        # Start from the col 49 after you print data of a facility
+        Write_Start_from_row+=1                                                        # Go to the next row as well
 
 
+Section3b(3,worksheet.nrows,0,49,1,0)                                                   # Calling then function Section3b
+Section4(3,worksheet.nrows,139,160,1,49)                                               # Calling then function Section4
+Section5(3,worksheet.nrows,349,363,1,70)
 
 
 output_Workbook.close()                                                                # Close the workbook when done
