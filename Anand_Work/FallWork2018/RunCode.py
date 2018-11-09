@@ -24,7 +24,9 @@ bold = output_Workbook.add_format({'bold': True})
 Section_4Head = 49                                      # For the headings of the next section after a gap of data 
 Section_5Head = 70                                      # For the headings of the next section after a gap of data
 Section_6Head = 84                                      # For the headings of the next section after a gap of data
-for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745)):    # Since we are taking heads after a gap of data I have specified different ranges 
+Section_7Head = 94                                      # For the headings of the next section after a gap of data
+
+for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840)):    # Since we are taking heads after a gap of data I have specified different ranges 
     head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
     if headcol <=49:                                 # For 1st section of data the headings should be written
         outWorkSheet.write(0,headcol,head_obj.value)
@@ -37,7 +39,9 @@ for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745))
     elif headcol>362 and headcol<1745:
         outWorkSheet.write(0,Section_6Head,head_obj.value)
         Section_6Head+=1
-
+    elif headcol>1745 and headcol<1840:
+        outWorkSheet.write(0,Section_7Head,head_obj.value)
+        Section_7Head+=1
 
 
 # For printing data
@@ -65,6 +69,7 @@ Parameters =>
 - Write_Start_from_col  ::>     Point to start writing in the OUTPUT xl file
 
 """
+
 
 def Section3b(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Write_Start_from_row , Write_Start_from_col ):
             # Read of row start from the data file                             # Writing in the OUTPUT file
