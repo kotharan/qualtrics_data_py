@@ -21,18 +21,22 @@ bold = output_Workbook.add_format({'bold': True})
 
 
 # For headings
-Section4Head = 49                                      # For the headings of the next section after a gap of data 
-Section5Head = 70                                      # For the headings of the next section after a gap of data 
-for headcol in chain(range(0,49),range(139,160),range(349,363)):    # Since we are taking heads after a gap of data I have specified different ranges 
+Section_4Head = 49                                      # For the headings of the next section after a gap of data 
+Section_5Head = 70                                      # For the headings of the next section after a gap of data
+Section_6Head = 84                                      # For the headings of the next section after a gap of data
+for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745)):    # Since we are taking heads after a gap of data I have specified different ranges 
     head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
     if headcol <=49:                                 # For 1st section of data the headings should be written
         outWorkSheet.write(0,headcol,head_obj.value)
     elif headcol>49 and headcol<=159:                # For next section heading should be written continuously after the first set of heading avoding the loop headings
-        outWorkSheet.write(0,Section4Head,head_obj.value)
-        Section4Head+=1
+        outWorkSheet.write(0,Section_4Head,head_obj.value)
+        Section_4Head+=1
     elif headcol>160 and headcol<=362:
-        outWorkSheet.write(0,Section5Head,head_obj.value)
-        Section5Head+=1
+        outWorkSheet.write(0,Section_5Head,head_obj.value)
+        Section_5Head+=1
+    elif headcol>362 and headcol<1745:
+        outWorkSheet.write(0,Section_6Head,head_obj.value)
+        Section_6Head+=1
 
 
 
