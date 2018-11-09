@@ -21,19 +21,13 @@ bold = output_Workbook.add_format({'bold': True})
 
 
 # For headings
-<<<<<<< HEAD
-Section4Head = 49                                      # For the headings of the next section after a gap of data 
-Section5Head = 70                                      # For the headings of the next section after a gap of data 
 
-for headcol in chain(range(0,49),range(139,160),range(349,363)):    # Since we are taking heads after a gap of data I have specified different ranges 
-=======
 Section_4Head = 49                                      # For the headings of the next section after a gap of data 
 Section_5Head = 70                                      # For the headings of the next section after a gap of data
 Section_6Head = 84                                      # For the headings of the next section after a gap of data
 Section_7Head = 94                                      # For the headings of the next section after a gap of data
 
 for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840)):    # Since we are taking heads after a gap of data I have specified different ranges 
->>>>>>> workBranch
     head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
     if headcol <=49:                                 # For 1st section of data the headings should be written
         outWorkSheet.write(0,headcol,head_obj.value)
