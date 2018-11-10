@@ -21,12 +21,14 @@ bold = output_Workbook.add_format({'bold': True})
 
 
 # For headings
+
 Section_4Head = 49                                      # For the headings of the next section after a gap of data 
 Section_5Head = 70                                      # For the headings of the next section after a gap of data
 Section_6Head = 84                                      # For the headings of the next section after a gap of data
 Section_7Head = 94                                      # For the headings of the next section after a gap of data
+Section_8Head = 99
 
-for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840)):    # Since we are taking heads after a gap of data I have specified different ranges 
+for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840),range(1885,1895)):    # Since we are taking heads after a gap of data I have specified different ranges 
     head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
     if headcol <=49:                                 # For 1st section of data the headings should be written
         outWorkSheet.write(0,headcol,head_obj.value)
@@ -42,6 +44,10 @@ for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),
     elif headcol>1745 and headcol<1840:
         outWorkSheet.write(0,Section_7Head,head_obj.value)
         Section_7Head+=1
+    elif headcol>1840 and headcol<1895:
+        outWorkSheet.write(0,Section_8Head,head_obj.value)
+        Section_8Head+=1
+    
 
 
 # For printing data
@@ -147,7 +153,7 @@ def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
             Facility_Row_End = 349 + (14 * num_of_facilities)                       # 139 of starting read col 
 
             for col in range(363,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
-                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col                
                 outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
                 Write_Start_from_col +=1
 
