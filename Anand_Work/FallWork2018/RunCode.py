@@ -28,9 +28,10 @@ Section_6Head = 84                                      # For the headings of th
 Section_7Head = 94                                      # For the headings of the next section after a gap of data
 Section_8Head = 99
 Section_9Head = 109
+Section_10Head = 126
 
 
-for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840),range(1885,1895),range(1985,2002)):    # Since we are taking heads after a gap of data I have specified different ranges 
+for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),range(1835,1840),range(1885,1895),range(1985,2002),range(2155,2158)):    # Since we are taking heads after a gap of data I have specified different ranges 
     head_obj = worksheet.cell(1, headcol)            # Get cell object by row, col
     if headcol <=49:                                 # For 1st section of data the headings should be written
         outWorkSheet.write(0,headcol,head_obj.value)
@@ -52,6 +53,9 @@ for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),
     elif headcol>1895 and headcol<2002:
         outWorkSheet.write(0,Section_9Head,head_obj.value)
         Section_9Head+=1
+    elif headcol>2002 and headcol<2158:
+        outWorkSheet.write(0,Section_10Head,head_obj.value)
+        Section_10Head+=1
     
 
 
@@ -285,6 +289,35 @@ def Section9(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
         Write_Start_from_col=109                                                        # Start from the col 49 after you print data of a facility
         Write_Start_from_row+=1                                                        # Go to the next row as well
 
+def Section10(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Write_Start_from_row , Write_Start_from_col ):
+            # Read of row start from the data file                             # Writing in the OUTPUT file
+
+    for row in range(Read_Start_from_row , till_row):
+        for col in range(Read_Start_from_col, till_col):
+            cell_obj = worksheet.cell(row, col).value                                # Get cell object by row, col
+            outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_obj)     # Write the cell_obj in OUTPUT file
+            Write_Start_from_col +=1
+        
+        if(worksheet.cell(row, 19).value == ""):
+            pass
+        elif (worksheet.cell(row, 19).value > 1):                                    # Loop for Section 3B in qualtrics. This checks if there are more than one facility and loops to each facility data if there is
+            num_of_facilities = int(worksheet.cell(row, 19).value)                   # Stores the Number of Facilities 
+            Write_Start_from_col=126                                                  # If there is more than one facility print the next facility data below the first facility data
+            Write_Start_from_row+=1
+            Facility_Row_End = 2155 + (3 * num_of_facilities)                       # 139 of starting read col 
+
+            for col in range(2158,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
+                cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                Write_Start_from_col +=1
+
+                if Write_Start_from_col == 129:                                      # 94 is end col of 1st loop
+                    Write_Start_from_col = 126
+                    Write_Start_from_row += 1
+
+        Write_Start_from_col=126                                                        # Start from the col 49 after you print data of a facility
+        Write_Start_from_row+=1                                                        # Go to the next row as well
+
 
 
 Section3b(3,worksheet.nrows,0,49,1,0)                                                   # Calling then function Section3b
@@ -294,5 +327,6 @@ Section6(3,worksheet.nrows,1735,1745,1,84)
 Section7(3,worksheet.nrows,1835,1840,1,94)
 Section8(3,worksheet.nrows,1885,1895,1,99)
 Section9(3,worksheet.nrows,1985,2002,1,109)
+Section10(3,worksheet.nrows,2155,2158,1,126)
 
 output_Workbook.close()                                                                # Close the workbook when done
