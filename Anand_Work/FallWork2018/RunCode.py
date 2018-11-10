@@ -7,7 +7,7 @@ from itertools import chain
 #Pull out working dir path
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-inputbook = xlrd.open_workbook(dir_path+"\\Provider_survey_data.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
+inputbook = xlrd.open_workbook(dir_path+"\SaveAs__.XLSX__Report\\Provider_survey_data.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
 worksheet = inputbook.sheet_by_index(0)
 
 #===========CREATING A WORKBOOK TO STORE======================#
@@ -18,9 +18,6 @@ outWorkSheet = output_Workbook.add_worksheet('Provider Suvery Data') #Creating n
 # Used only the bold ones to see the facilitynames and their other data other than the first facility data
 italic = output_Workbook.add_format({'italic': True}) #To do cell text formatting
 bold = output_Workbook.add_format({'bold': True})
-
-words2words1 = {'One': 1, 'Two': 2, 'Three' : 3, 'Four': 4, 'Five': 5, \
-            'Six': 6, 'Seven': 7, 'Eight': 8 , 'Nine': 9,'Ten': 10 }
 
 # For headings
 
