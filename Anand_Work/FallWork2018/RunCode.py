@@ -7,7 +7,7 @@ from itertools import chain
 #Pull out working dir path
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-inputbook = xlrd.open_workbook(dir_path+"\\test.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
+inputbook = xlrd.open_workbook(dir_path+"\\Provider_survey_data.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
 worksheet = inputbook.sheet_by_index(0)
 
 #===========CREATING A WORKBOOK TO STORE======================#
@@ -19,6 +19,8 @@ outWorkSheet = output_Workbook.add_worksheet('Provider Suvery Data') #Creating n
 italic = output_Workbook.add_format({'italic': True}) #To do cell text formatting
 bold = output_Workbook.add_format({'bold': True})
 
+words2words1 = {'One': 1, 'Two': 2, 'Three' : 3, 'Four': 4, 'Five': 5, \
+            'Six': 6, 'Seven': 7, 'Eight': 8 , 'Nine': 9,'Ten': 10 }
 
 # For headings
 
@@ -105,7 +107,7 @@ def Section3b(Read_Start_from_row, till_row , Read_Start_from_col , till_col , W
 
             for col in range(49,Facility_Row_End):                                 # This is 29 times num_of_facilities of facility because there are 29 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 49:
@@ -134,7 +136,7 @@ def Section4(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(160,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 70:                                      # 70 is end col of 1st loop
@@ -163,7 +165,7 @@ def Section5(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(363,Facility_Row_End):                                #160 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col                
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 84:                                      # 70 is end col of 1st loop
@@ -192,7 +194,7 @@ def Section6(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(1745,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 94:                                      # 94 is end col of 1st loop
@@ -221,7 +223,7 @@ def Section7(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(1840,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 99:                                      # 94 is end col of 1st loop
@@ -250,7 +252,7 @@ def Section8(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(1895,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 109:                                      # 94 is end col of 1st loop
@@ -279,7 +281,7 @@ def Section9(Read_Start_from_row, till_row , Read_Start_from_col , till_col , Wr
 
             for col in range(2002,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 126:                                      # 94 is end col of 1st loop
@@ -308,7 +310,7 @@ def Section10(Read_Start_from_row, till_row , Read_Start_from_col , till_col , W
 
             for col in range(2158,Facility_Row_End):                                #1745 is second loop start data # This is 21 times num_of_facilities of facility because there are 21 questions for each facility
                 cell_data = worksheet.cell(row, col).value                           # Get cell object by row, col
-                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data,bold)
+                outWorkSheet.write(Write_Start_from_row,Write_Start_from_col,cell_data)
                 Write_Start_from_col +=1
 
                 if Write_Start_from_col == 129:                                      # 94 is end col of 1st loop
