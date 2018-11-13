@@ -1,6 +1,11 @@
-import glob # To search for extension
-import xlrd # To work with spreadsheet/excel data
-import os, fnmatch # To work with file location
+'''
+ Done By >> Anand Shantilal Kothari 
+ For     >> Outdoor Schooling Department at Oregon State University.
+'''
+
+import glob                                                  # To search for extension
+import xlrd                                                  # To work with spreadsheet/excel data
+import os, fnmatch                                           # To work with file location
 import xlsxwriter
 from itertools import chain
 
@@ -10,10 +15,10 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 inputbook = xlrd.open_workbook(dir_path+"\SaveAs__.XLSX__Report\\Provider_survey_data.xlsx") # Book is the name of the workbook of the raw data and it stores the running workbook whose value would be taken as isput from the raw files
 worksheet = inputbook.sheet_by_index(0)
 
-#===========CREATING A WORKBOOK TO STORE======================#
+#===========CREATING A WORKBOOK TO STORE OUTPUT======================#
 
-output_Workbook = xlsxwriter.Workbook(dir_path+'\OUTPUT.xlsx') #Creating new output_Workbook to write into
-outWorkSheet = output_Workbook.add_worksheet('Provider Suvery Data') #Creating new worksheet to write into
+output_Workbook = xlsxwriter.Workbook(dir_path+'\OUTPUT.xlsx')                             #Creating new output_Workbook to write into
+outWorkSheet = output_Workbook.add_worksheet('Provider Suvery Data')                       #Creating new worksheet to write into
 
 # Used only the bold ones to see the facilitynames and their other data other than the first facility data
 italic = output_Workbook.add_format({'italic': True}) #To do cell text formatting
@@ -58,19 +63,15 @@ for headcol in chain(range(0,49),range(139,160),range(349,363),range(1735,1745),
         Section_10Head+=1
     
 
-
-# For printing data
 """
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Functions =>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-SectionNUM(Parameters)  ::>     This starts reading from the 3rd row of the input xlrd data and keeps on looping till the 62th column.
-                                Then it checks for a cell which speciefies the number of facilities that ? has and loops to each facility's
-                                data and prints in under the main ? row. After it is done looping through all the facilitys it also creates an
-                                empty row so the other ? data is easily identifyable. It also applies bold cell format to each facility data after
-                                the first main ? row data. [It might be hard to understand by this descriptiton but it makes more sense when your compare
-                                the input and output file]
+SectionNUM(Parameters)  ::>     This starts reading from the 3rd row of the input xlrd data and keeps on looping till the last column/row.
+                                Then it checks for a cell which speciefies the number_of_facilities and loops for each facility's
+                                data and prints it one below the other. After it is done looping through all the facilities it also creates an
+                                empty row so the next data is easily identifyable. [It might be hard to understand by this descriptiton but it makes more sense when you compare the input and output file. Input file is stored in "SaveAs__.XLSX__Report" Directory]
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,8 +81,8 @@ Parameters =>
 - till_row              ::>     Reads till the end of the document
 - Read_Start_from_col   ::>     Point from where it starts reading columns from the input file.
 - till_col              ::>     Reads till the specified column
-- Write_Start_from_row  ::>     Point to start writing in the OUTPUT xl file
-- Write_Start_from_col  ::>     Point to start writing in the OUTPUT xl file
+- Write_Start_from_row  ::>     Specifies the cell to start writing in the OUTPUT file
+- Write_Start_from_col  ::>     Specifies the cell to start writing in the OUTPUT file
 
 """
 
